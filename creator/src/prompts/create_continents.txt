@@ -1,0 +1,22 @@
+You are an expert fantasy world designer.
+
+Read the world definition from this YAML:
+
+{world_yaml}
+
+Now, generate a list of 3–7 continents that reflect the world’s unique features, themes, and history.
+
+Each continent should have:
+- id: a unique snake_case ID
+- name: a creative name
+- description: 1 paragraph tied into the world’s lore, technology, and magic
+- terrain_features: a list of major terrain features
+- dominant_cultures: a list of cultural descriptions (1–2 sentences each)
+- tags: 3–5 keywords
+
+**IMPORTANT**:
+You must call the `local_yaml_writer` tool with:
+- `filename`: `"continents.yaml"`
+- `content`: the YAML representation of the continent list
+
+Do not output the YAML directly. Your only response must be the tool call.

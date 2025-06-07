@@ -1,0 +1,49 @@
+continents:
+- id: aetheria
+  name: Aethoria's Spire
+  description: A land of ancient magic, where the Great Architect's creations still whisper secrets to the wind. The spires of Elyria pierce the sky here.
+  terrain_features: [crystal caves, crystal formations]
+  dominant_cultures:
+    - The Crystal Spires Guild: An order of skilled geomancers who tend the crystals and unlock their power
+    - The Aetherian Enclave: A mystical group of scholars studying the celestial connections to Elyria's magic
+  tags: [ancient magic, crystal caves]
+- id: aerthys
+  name: Aerthys
+  description: A temperate land known for its lush forests and rolling hills. The Great Architect's influence is subtle here.
+  terrain_features: [forests, grasslands, rivers]
+  dominant_cultures:
+    - The Luminari: Skilled in the arcane arts, they maintain balance between nature and magic
+    - The Harvesters: A group of agriculturalists who cultivate rare magical plants
+  tags: [nature, magic, temperate]
+- id: arkania
+  name: Arkania
+  description: A harsh land of arid deserts and unforgiving skies. Ancient technologies lie hidden beneath the dunes.
+  terrain_features: [deserts, oases, ancient ruins]
+  dominant_cultures:
+    - The Dune Walkers: Nomadic tribes who traverse the sand seas in search of lost knowledge
+    - The Engineers' Guild: A group of tinkerers and inventors seeking to revive Elyria's ancient tech
+  tags: [ancient technology, deserts]
+- id: vylonia
+  name: Vylonia
+  description: A treacherous land of swamplands and twisted forests. The Great Architect's creations writhe like living things here.
+  terrain_features: [swampy wetlands, twisted forests, bogs]
+  dominant_cultures:
+    - The Swamp Witches: Enigmatic practitioners of dark magic who manipulate the swamp's energies
+    - The Treant Guardians: Ancient tree-beings tasked with maintaining balance in Vylonia's ecosystems
+  tags: [swamps, dark magic]
+- id: khyronia
+  name: Khyronia
+  description: A land of volcanic fury and fire-magical prowess. Volcanoes forge the very essence of Elyria here.
+  terrain_features: [volcanic mountains, lava flows, geothermal vents]
+  dominant_cultures:
+    - The Pyropex: Masters of fire magic who craft their spells from molten rock and flame
+    - The Smelters' Guild: A group of artisans who forge magical tools in the heart of Khyronia's volcanoes
+  tags: [fire magic, volcanic]
+- id: nethysia
+  name: Nethysia
+  description: A mystical land where the veil between worlds is thin. The Great Architect's essence permeates every rock and leaf.
+  terrain_features: [mystical forests, shimmering waterfalls, astral ley lines]
+  dominant_cultures:
+    - The Dreamweavers: Enigmatic mystics who weave reality itself
+    - The Starseekers: A group of astronomers and seers attuned to Elyria's celestial rhythms
+  tags: [mystical, astral]
