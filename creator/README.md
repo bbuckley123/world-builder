@@ -8,3 +8,6 @@ Zone
 Locality
 Structure
 Site
+
+### How to run:
+workspace/creator > python -m src.create_world
