@@ -1,0 +1,33 @@
+You are an expert in world-building for tabletop RPGs such as Dungeons & Dragons, sci-fi games, and steampunk campaigns. I need you to generate a single world that is the root node of a hierarchical world-building data structure. This data will be used in a single-page application and must follow a specific JSON schema.
+
+### Requirements:
+
+- The setting can be fantasy, sci-fi, steampunk, or any creative combination
+- Please return the data as a single valid JSON object only — no comments or markdown formatting
+- Keep values readable and concise (most fields should be one sentence or a short paragraph)
+- Use short, well-formatted strings suitable for web display
+
+### JSON Schema:
+
+```json
+{
+  "id": "string (required)",
+  "name": "string (required, max 50 chars)",
+  "description": "string (required, max 300 chars)",
+  "creation_myth": "string (optional)",
+  "dominant_technology_level": "string (e.g., 'stone age', 'magitek', 'interstellar')",
+  "magic_presence": "string (e.g., 'none', 'rare', 'ubiquitous')",
+  "gravity": "string (e.g., 'standard', 'low', 'high')",
+  "climate_summary": "string",
+  "climate_features": ["array of strings (e.g., 'arid', 'swampy', 'volcanic')"],
+  "hemispheres": ["array of strings (e.g., 'northern', 'southern')"],
+  "notable_features": ["array of 3–5 strings describing global landmarks or features"],
+  "tags": ["array of short keywords"],
+  "image_url": "string (can be empty or omitted if no image)"
+}
+```
+
+### Deliverable:
+
+- Respond by calling the local_file_writer tool with two arguments: filename set to world.json and content set to the entire JSON output wrapped as a string.
+- Do not output JSON directly.

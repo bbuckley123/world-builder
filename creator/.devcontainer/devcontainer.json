@@ -1,0 +1,20 @@
+{
+    "name": "llm-dev",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "runArgs": [
+      "--add-host=host.docker.internal:host-gateway"
+    ],
+    "settings": {
+      "python.defaultInterpreterPath": "/usr/local/bin/python"
+    },
+    "postCreateCommand": "pip install -r /app/requirements.txt",
+    "extensions": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "ms-toolsai.jupyter",
+      "ms-azuretools.vscode-docker"
+    ]
+  }
+  
