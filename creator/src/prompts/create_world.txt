@@ -30,7 +30,7 @@ You are an expert in world-building for tabletop RPGs such as Dungeons & Dragons
 ### Deliverable:
 Call the local_yaml_writer tool with:
 
-filename: world.yaml
+filename: world_data/world.yaml
 
 content: the entire YAML object as a string
 

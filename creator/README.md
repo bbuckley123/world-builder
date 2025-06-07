@@ -9,5 +9,10 @@ Locality
 Structure
 Site
 
-### How to run:
-workspace/creator > python -m src.create_world
+### How to run
+
+Run the project from the ``creator`` directory with:
+
+```bash
+python run.py
+```

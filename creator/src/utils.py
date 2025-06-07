@@ -28,6 +28,9 @@ def local_yaml_writer(filename: str, content: str) -> str:
 
 
 PROMPT_DIR = Path(__file__).resolve().parent / "prompts"
+# Directory where intermediate YAML files are stored
+DATA_DIR = Path(__file__).resolve().parent.parent / "world_data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def load_prompt(name: str) -> str:

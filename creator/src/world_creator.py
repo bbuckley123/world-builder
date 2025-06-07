@@ -1,5 +1,9 @@
+from pathlib import Path
 from smolagents import ToolCallingAgent, LiteLLMModel
-from .utils import local_yaml_writer, load_prompt
+from .utils import local_yaml_writer, load_prompt, DATA_DIR
+
+
+WORLD_FILE = DATA_DIR / "world.yaml"
 
 
 def create_world(model: LiteLLMModel) -> str:
@@ -11,5 +15,5 @@ def create_world(model: LiteLLMModel) -> str:
         model=model,
     )
     agent.run(world_prompt)
-    with open("world.yaml", "r", encoding="utf-8") as f:
+    with open(WORLD_FILE, "r", encoding="utf-8") as f:
         return f.read()
