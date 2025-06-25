@@ -1,0 +1,19 @@
+{
+ id: "Elyria",
+ name: "The Celestial Realm of Elyria",
+ description: "A world of floating islands, ancient magic, and forgotten technologies."
+ creation_myth: "The Celestial Architects descended from the stars to shape this world in their image."
+ dominant_technology_level: "Magitek",
+ magic_presence: "Ubiquitous",
+ gravity: "Standard",
+ climate_summary: "Elyria's skies are perpetually shrouded in mist, with frequent rain showers and misty downpours.",
+ climate_features: ["Arid", "Swampy", "Volcanic"],
+ hemispheres: ["Northern", "Southern"],
+ notable_features: [
+  "The Great Spire of Eldrador",
+  "The Shattered Isles of Valyria",
+  "The Wysteria Forest"
+ ],
+ tags: ["Floating Islands", "Magitek", "Ancient Magic"]
+ image_url: "https://example.com/elyria.jpg"
+}

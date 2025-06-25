@@ -3,8 +3,14 @@ langchain-community
 langchain-ollama
 ollama
 faiss-cpu
-tqdm
 unstructured
 smolagents[toolkit]
 smolagents[litellm]
 huggingface_hub
+diffusers
+accelerate
+transformers
+torch>=2.8.0.dev0
+torchvision>=0.15.0.dev0
+torchaudio>=2.0.2.dev0
+protobuf>=6.31.1

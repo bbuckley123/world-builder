@@ -1,0 +1,71 @@
+[
+{
+ id: "elyria_north",
+ name: "Nefaria's Spire",
+ description: "A land of gleaming spires and ancient wisdom, where the Celestial Architects' legacy lives on in the towering cities of the north. The skies are perpetually shrouded in mist, but the air is crisp and clean, filled with the scent of mystic energies.",
+ terrain_features: [
+  "Floating Islands",
+  "Mystic Caverns"
+ ],
+ dominant_cultures: [
+  {
+   name: "The Spiresingers",
+   description: "A people attuned to the celestial harmonies, their music and art reflecting the beauty of the mystical energies that permeate Nefaria's Spire."
+  },
+  {
+   name: "The Arcanists' Guild",
+   description: "A group of master mages who seek to unlock the secrets of Magitek and wield its power to shape the world.",
+  }
+ ],
+ tags: [
+  "Magitek",
+  "Ancient Magic",
+  "Floating Islands"
+ }
+},
+{
+ id: "elyria_south",
+ name: "Valyrian Depths",
+ description: "A land of mystery and danger, where the Shattered Isles of Valyria rise from the mists like ghostly apparitions. The air is thick with the scent of salt and seaweed, and the sound of crashing waves echoes through the valleys.",
+ terrain_features: [
+  "Shattered Isles",
+  "Misty Fens"
+ ],
+ dominant_cultures: [
+  {
+   name: "The Valyrian Mariners",
+   description: "A hardy people who have learned to navigate the treacherous waters and harness the power of the sea.",
+  },
+  {
+   name: "The Sea witches",
+   description: "A mystical order who communicate with the spirits of the deep to guide their ships and protect their people.",
+  }
+ ],
+ tags: [
+  "Shattered Isles",
+  "Magitek",
+  "Ancient Magic"
+ },
+{
+ id: "elyria_west",
+ name: "Eldrida's Reach",
+ description: "A land of ancient forests and forgotten technologies, where the remnants of a bygone era whisper secrets to those who listen. The air is thick with the scent of damp earth and decaying leaves.",
+ terrain_features: [
+  "The Wysteria Forest",
+  "Ancient Ruins"
+ ],
+ dominant_cultures: [
+  {
+   name: "The Eldridan Treants",
+   description: "A ancient, tree-like beings who have watched over the forest for millennia and hold its secrets close.",
+  },
+  {
+   name: "The Order of the Green Hand",
+   description: "A group of druids who seek to restore the balance of nature in Elyria's troubled world.",
+  }
+ ],
+ tags: [
+  "Ancient Magic",
+  "Magitek",
+  "Lost Technologies"
+ ]
