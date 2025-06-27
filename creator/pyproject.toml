@@ -6,7 +6,6 @@ version = "0.1.0"
 requires-python = ">=3.13.5"
 dependencies = [
     "langchain",
-    "langchain-community",
     "langchain-ollama",
     "ollama",
     "faiss-cpu",
@@ -21,6 +20,7 @@ dependencies = [
     "torchvision>=0.15.0.dev0",
     "torchaudio>=2.0.2.dev0",
     "protobuf>=6.31.1",
+    "langgraph>=0.4.10",
 ]
 
 # Tell uv about the extra index for nightly CPU/MPS wheels
@@ -36,7 +36,7 @@ torchvision = [{ index = "pytorch-nightly-cpu" }]
 torchaudio  = [{ index = "pytorch-nightly-cpu" }]
 
 [project.scripts]
-worldbuilder = "worldbuilder.cli:main"
+worldbuilder = "worldbuilder.lg_cli:main"
 
 [tool.uv]
 package = true

@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import yaml
 import unittest
-from ..utils import local_yaml_writer, load_prompt, PROMPT_DIR
+from ..worldbuilder.utils import local_yaml_writer, load_prompt, PROMPT_DIR
 
 
 class TestLocalYamlWriter(unittest.TestCase):

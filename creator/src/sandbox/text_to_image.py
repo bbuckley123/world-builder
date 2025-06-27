@@ -25,10 +25,9 @@ def main():
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
 
-    # Drop the T5 Text Encoder during Inference
     pipe = StableDiffusion3Pipeline.from_pretrained(
         "stabilityai/stable-diffusion-3-medium-diffusers",
-        text_encoder_3=None,
+        text_encoder_3=None, # Drop the T5 Text Encoder during Inference
         tokenizer_3=None,
         torch_dtype=torch.float16,
         feature_extractor=None

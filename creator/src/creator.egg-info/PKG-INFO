@@ -3,7 +3,6 @@ Name: creator
 Version: 0.1.0
 Requires-Python: >=3.13.5
 Requires-Dist: langchain
-Requires-Dist: langchain-community
 Requires-Dist: langchain-ollama
 Requires-Dist: ollama
 Requires-Dist: faiss-cpu
@@ -18,3 +17,4 @@ Requires-Dist: torch>=2.8.0.dev0
 Requires-Dist: torchvision>=0.15.0.dev0
 Requires-Dist: torchaudio>=2.0.2.dev0
 Requires-Dist: protobuf>=6.31.1
+Requires-Dist: langgraph>=0.4.10

@@ -1,4 +1,4 @@
-from src.create_all import main
+from src.worldbuilder.cli import main
 
 if __name__ == "__main__":
     main()
