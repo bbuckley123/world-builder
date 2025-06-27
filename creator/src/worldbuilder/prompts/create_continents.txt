@@ -15,8 +15,8 @@ Each continent should have:
 - tags: 3–5 keywords
 
 **IMPORTANT**:
-You must call the `local_yaml_writer` tool with:
-- `filename`: `"continents.yaml"`
+-You must call the `local_yaml_writer` tool with:
+- `filename`: `"world_data/continents.yaml"`
 - `content`: the YAML representation of the continent list
 
 Do not output the YAML directly. Your only response must be the tool call.

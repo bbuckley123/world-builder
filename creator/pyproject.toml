@@ -1,0 +1,42 @@
+# pyproject.toml
+
+[project]
+name = "creator" 
+version = "0.1.0"
+requires-python = ">=3.13.5"
+dependencies = [
+    "langchain",
+    "langchain-ollama",
+    "ollama",
+    "faiss-cpu",
+    "unstructured",
+    "smolagents[toolkit]",
+    "smolagents[litellm]",
+    "huggingface_hub",
+    "diffusers",
+    "accelerate",
+    "transformers",
+    "torch>=2.8.0.dev0",
+    "torchvision>=0.15.0.dev0",
+    "torchaudio>=2.0.2.dev0",
+    "protobuf>=6.31.1",
+    "langgraph>=0.4.10",
+]
+
+# Tell uv about the extra index for nightly CPU/MPS wheels
+[[tool.uv.index]]
+name     = "pytorch-nightly-cpu"
+url      = "https://download.pytorch.org/whl/nightly/cpu"
+explicit = true
+
+# Map each torch* package to that index
+[tool.uv.sources]
+torch       = [{ index = "pytorch-nightly-cpu" }]
+torchvision = [{ index = "pytorch-nightly-cpu" }]
+torchaudio  = [{ index = "pytorch-nightly-cpu" }]
+
+[project.scripts]
+worldbuilder = "worldbuilder.lg_cli:main"
+
+[tool.uv]
+package = true

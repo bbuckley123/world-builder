@@ -1,15 +1,15 @@
+from pathlib import Path
 from smolagents import ToolCallingAgent, LiteLLMModel
-from .utils import local_yaml_writer, load_prompt
+from worldbuilder.utils import local_file_writer, load_prompt, DATA_DIR
 
+WORLD_FILE = DATA_DIR / "world.yaml"
 
 def create_world(model: LiteLLMModel) -> str:
     """Generate world.yaml using the provided LLM model and return its contents."""
-    world_prompt = load_prompt("create_world.txt")
+    world_prompt = load_prompt("create_world_narrative.txt")
     agent = ToolCallingAgent(
         name="WorldCreatorAgent",
-        tools=[local_yaml_writer],
+        tools=[local_file_writer],
         model=model,
     )
     agent.run(world_prompt)
-    with open("world.yaml", "r", encoding="utf-8") as f:
-        return f.read()

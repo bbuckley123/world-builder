@@ -1,8 +1,9 @@
-import os
+from pathlib import Path
 from smolagents import ToolCallingAgent, LiteLLMModel
-from .utils import local_yaml_writer, load_prompt
+from ..worldbuilder.utils import local_yaml_writer, load_prompt, DATA_DIR
 
 SHOULD_VALIDATE = False
+CONTINENT_FILE = DATA_DIR / "continents.yaml"
 
 def create_continents(world_yaml: str, model: LiteLLMModel, max_retries: int = 3) -> str:
     """Generate continents.yaml based on world_yaml. Returns the YAML string."""
@@ -22,11 +23,11 @@ def create_continents(world_yaml: str, model: LiteLLMModel, max_retries: int = 3
         print(f"\n=== Attempt {attempt + 1} to generate continents.yaml ===")
         continent_agent.run(continent_prompt)
 
-        if not os.path.exists("continents.yaml"):
+        if not CONTINENT_FILE.exists():
             print("continents.yaml was not created. Retrying...")
             continue
 
-        with open("continents.yaml", "r", encoding="utf-8") as f:
+        with open(CONTINENT_FILE, "r", encoding="utf-8") as f:
             continents_yaml = f.read()
 
         if SHOULD_VALIDATE == True:
