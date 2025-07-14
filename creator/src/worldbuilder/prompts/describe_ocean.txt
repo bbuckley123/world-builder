@@ -1,0 +1,7 @@
+Write a vivid description of an ocean named '{{ name }}'. The ocean is briefly described here:
+
+{{ description }}
+
+You need to write 2 or 3 paragraphs of detail about this ocean. If the "name" suggests there is no ocean, assume it is "mysterious". If there is no reference to oceans in the description, assume it is "mysterious."
+
+The description *must* be in present tense. Do *not* include any introductory text, formatting, or code fences. *Only* generate the description.

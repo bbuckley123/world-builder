@@ -1,0 +1,7 @@
+I'm building a procedural world-generation system using LangGraph and Python.
+The first LangGraph generates a YAML file for a fictional world, including a name, genre, and description.
+The second LangGraph reads that world description and generates detailed metadata and Stable Diffusion images for each continent and ocean (name, description, image_prompt, image_path).
+Prompts are stored as Jinja2 .txt templates in a prompts/ directory, and the system uses OllamaLLM locally and StableDiffusion3Pipeline with a memoized loader.
+Paths and file locations are centralized in a paths.py file, and images and YAML files are written to a structured world_data/ folder.
+The CLI has three entry points via pyproject.toml: uv run worldbuilder (world only), uv run continentsbuilder (regions only), and uv run worldfull (both in sequence).
+I usually have questions about Python architecture, LangGraph idioms, next-step ideas, and how to choose between tools like diffusers, Jinja2, and Hugging Face caching strategies.

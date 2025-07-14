@@ -1,2 +1,4 @@
 [console_scripts]
-worldbuilder = worldbuilder.lg_cli:main
+continentsbuilder = worldbuilder.region_graph:main
+worldbuilder = worldbuilder.world_graph:main
+worldfull = worldbuilder.full_graph:main

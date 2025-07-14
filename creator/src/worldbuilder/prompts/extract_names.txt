@@ -1,0 +1,15 @@
+Given the following world description:
+
+{{ description }}
+
+Extract a list of continent names and a list of ocean names.
+Return the result as **YAML** in this format only:
+
+continents:
+  - Continent A
+  - Continent B
+oceans:
+  - Ocean X
+  - Ocean Y
+
+Do *not* include any introductory text, formatting, or code fences. If you cannot find any continents or oceans, simply leave the yaml entry blank. Do *not* explain leaving an entry blank. Just leave it blank.

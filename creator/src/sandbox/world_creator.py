@@ -1,6 +1,6 @@
 from pathlib import Path
 from smolagents import ToolCallingAgent, LiteLLMModel
-from worldbuilder.utils import local_file_writer, load_prompt, DATA_DIR
+from src.sandbox.utils import local_file_writer, load_prompt, DATA_DIR
 
 WORLD_FILE = DATA_DIR / "world.yaml"
 

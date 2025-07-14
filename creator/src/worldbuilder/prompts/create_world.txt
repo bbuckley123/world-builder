@@ -1,37 +1,11 @@
-You are an expert in world-building for tabletop RPGs such as Dungeons & Dragons, sci-fi games, and steampunk campaigns. I need you to generate a single world that will serve as the root node of a hierarchical world-building data structure. This data will be used in a single-page application and must follow a specific YAML schema.
+You are an expert in generating world-building narratives and descriptions for tabletop RPGs such as Dungeons & Dragons, sci-fi games, superhero, alt-reality, cyberpunk and steampunk campaigns.
+
+This narrative will be parsed by a natural language processor. It is important to use key words in your description so the NLP can discover proper nouns.
 ### Requirements:
+- The genre for this world is: {{ genre }}. Stay consistent to this genre throughout your answer.
+- Describe the world. It _can_ be non-spherical. Give it a distinct name. Capitalize the first letter of the name. Pick at least one of these mandatory key words to describe the world: "world", "realm", "planet", or "plane".
+- Describe each continent. The continents names are: {{ continent_names }}
+- Describe each ocean. The ocean names are: {{ ocean_names }}
 
-- The setting can be fantasy, sci-fi, steampunk, or any creative combination
-- Return a single valid **YAML object**, not an array or JSON
-- Do **not** include markdown, comments, or explanations
-- Use readable, concise values (most fields should be one sentence or short paragraph)
-- Strings should be cleanly formatted for display in a web interface
-
-### YAML Schema:
-
-```yaml
-{
-  id: string (required),
-  name: string (required, max 50 chars),
-  description: string (required, max 300 chars),
-  creation_myth: string (optional),
-  dominant_technology_level: string (e.g., 'stone age', 'magitek', 'interstellar'),
-  magic_presence: string (e.g., 'none', 'rare', 'ubiquitous'),
-  gravity: string (e.g., 'standard', 'low', 'high'),
-  climate_summary: string,
-  climate_features: array of strings (e.g., 'arid', 'swampy', 'volcanic'),
-  hemispheres: array of strings (e.g., 'northern', 'southern'),
-  notable_features: array of 3–5 strings describing global landmarks or features,
-  tags: array of short keywords,
-  image_url: string (can be empty or omitted if no image)
-}
-```
-
-### Deliverable:
-Call the local_yaml_writer tool with:
-
-filename: world_data/world.yaml
-
-content: the entire YAML object as a string
-
-Do not output the YAML directly. Your only output should be the tool call.
+The mandatory key words *must* appear within 5 words of the name. Do *not* capitalize the key words. Work them naturally into the description.
+The narrative *must* be in present tense. Do *not* include any introductory text, formatting, or code fences. *Only* generate the description.

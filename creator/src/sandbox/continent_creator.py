@@ -1,6 +1,6 @@
 from pathlib import Path
 from smolagents import ToolCallingAgent, LiteLLMModel
-from ..worldbuilder.utils import local_yaml_writer, load_prompt, DATA_DIR
+from .utils import local_yaml_writer, load_prompt, DATA_DIR
 
 SHOULD_VALIDATE = False
 CONTINENT_FILE = DATA_DIR / "continents.yaml"

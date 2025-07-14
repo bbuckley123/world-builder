@@ -1,5 +1,5 @@
 from smolagents import LiteLLMModel
-from worldbuilder.world_creator import create_world
+from src.sandbox.world_creator import create_world
 
 OLLAMA_BASE = "http://localhost:11434"
 

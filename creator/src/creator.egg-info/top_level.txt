@@ -1,8 +1,6 @@
 __init__
-continent_creator
-data
-image_to_image
+input_data
+sandbox
 tests
-text_to_image
 world_data
 worldbuilder

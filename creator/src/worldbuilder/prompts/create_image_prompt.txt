@@ -1,0 +1,5 @@
+Create a Stable Diffusion prompt for an image of a {{ entity }} with the following description:
+
+{{ description }}
+
+It *must* be 40 words or less. Do *not* include any introductory text, formatting, or code fences.

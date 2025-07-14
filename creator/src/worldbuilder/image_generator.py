@@ -1,21 +1,7 @@
-from diffusers import StableDiffusion3Pipeline
-import torch
+from worldbuilder.pipeline_loader import get_stable_diffusion_pipeline
 
 def generate_image(prompt: str, output_path: str = "output.png") -> str:
-    device = "mps" if torch.backends.mps.is_available() else "cpu"
-
-    pipe = StableDiffusion3Pipeline.from_pretrained(
-        "stabilityai/stable-diffusion-3-medium-diffusers",
-        text_encoder_3=None,
-        tokenizer_3=None,
-        torch_dtype=torch.float16,
-        feature_extractor=None,
-    ).to(device)
-
-    pipe.enable_attention_slicing()
-
-    if device == "mps":
-        _ = pipe(prompt, num_inference_steps=1)
+    pipe = get_stable_diffusion_pipeline()
 
     result = pipe(
         prompt=prompt,
@@ -23,7 +9,7 @@ def generate_image(prompt: str, output_path: str = "output.png") -> str:
         num_inference_steps=40,
         guidance_scale=8.5,
         height=512,
-        width=512
+        width=1024
     )
 
     result.images[0].save(output_path)

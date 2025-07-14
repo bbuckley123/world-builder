@@ -18,3 +18,5 @@ Requires-Dist: torchvision>=0.15.0.dev0
 Requires-Dist: torchaudio>=2.0.2.dev0
 Requires-Dist: protobuf>=6.31.1
 Requires-Dist: langgraph>=0.4.10
+Requires-Dist: jinja2>=3.1.6
+Requires-Dist: spacy>=3.8.7

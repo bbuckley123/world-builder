@@ -26,6 +26,7 @@ def local_yaml_writer(filename: str, content: str) -> str:
     except Exception as e:  # pragma: no cover - just a safeguard
         return f"Failed to write file: {e}"
     
+    
 @tool
 def local_file_writer(filename: str, content: str) -> str:
     """Write any content to a local ``.txt`` file on disk.

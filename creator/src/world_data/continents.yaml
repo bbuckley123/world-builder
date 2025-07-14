@@ -1,0 +1,33 @@
+- name: Elyria
+  description: 'Glowing auroras dance across Aethoria''s night sky, casting an ethereal
+    light on snow-capped mountains that stretch towards the frozen peaks of the Crystal
+    Spires. Glacial lakes shimmer like polished mirrors, reflecting the stars above
+    as the Aetherean Tides crash against the shores in a relentless rhythm. The icy
+    winds howl through the valleys, sculpting intricate patterns in the frost that
+    coats every surface. In this unforgiving landscape, the dwarven clans of Kragnir
+    delve deep into the earth, seeking precious gems and metals within the ancient
+    rock.
+
+
+    As the sun rises over Elyria, its rays ignite the endless dunes of Eridoria''s
+    desert expanse, casting a warm glow across the shifting sands. Oases burst forth
+    like green oases in this arid landscape, each one a haven for travelers and traders
+    who seek refuge from the burning sun. The city-state of Zerzura stands as a shining
+    beacon on the edge of this unforgiving realm, its people renowned for their mastery
+    of magic and alchemy that weaves a subtle spell of protection around their sacred
+    city. In the distance, the twisted forests of Malumbra writhe like living darkness
+    in Nefaria''s mist-shrouded depths.
+
+
+    In Valtoria''s south, ancient ruins stretch towards the horizon, worn by the relentless
+    passage of time into mysterious artifacts and hidden temples waiting to be unearthed
+    by brave adventurers. The city-state of Eldarath stands as a beacon of knowledge
+    and wisdom on the edge of this vast expanse, its scholars delving deep into the
+    mysteries of Valtoria''s forgotten past. As the winds howl across the shifting
+    dunes, whispers of long-lost civilizations echo through the sands, beckoning those
+    who would uncover the secrets hidden beneath the desert''s waves.'
+  image_prompt: 'A continent with varied landscapes: glowing auroras dance across
+    snow-capped mountains in Aethoria''s night sky; shifting dunes of Eridoria''s
+    desert expanse meet twisted forests of Malumbra and ancient ruins of Valtoria,
+    with cities like Kragnir, Zerzura, and Eldarath.'
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Elyria.png
