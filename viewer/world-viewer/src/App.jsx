@@ -1,7 +1,11 @@
 // === src/App.jsx ===
 import { Container } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { WorldView } from './views/WorldView';
+import { WorldListPage } from './views/WorldListPage';
+import { WorldDetailPage } from './views/WorldDetailPage';
+import { ContinentDetailPage } from './views/ContinentDetailPage';
+import { OceanDetailPage } from './views/OceanDetailPage';
+import { RealmView } from './views/RealmView';
 import { ContinentView } from './views/ContinentView';
 import { RegionView } from './views/RegionView';
 import { LocalityView } from './views/LocalityView';
@@ -12,7 +16,10 @@ function App() {
   return (
     <Container maxWidth="md" sx={{ paddingTop: 4 }}>
       <Routes>
-        <Route path="/" element={<WorldView />} />
+        <Route path="/" element={<WorldListPage />} />
+        <Route path="/worlds/:worldId" element={<WorldDetailPage />} />
+        <Route path="/worlds/:worldId/continents/:continentId" element={<ContinentDetailPage />} />
+        <Route path="/worlds/:worldId/oceans/:oceanId" element={<OceanDetailPage />} />
         <Route path="/continent/:id" element={<ContinentView />} />
         <Route path="/region/:id" element={<RegionView />} />
         <Route path="/locality/:id" element={<LocalityView />} />

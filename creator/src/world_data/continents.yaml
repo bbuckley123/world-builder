@@ -1,33 +1,167 @@
+- name: Aethoria
+  description: 'Aethoria''s snow-capped mountains pierce the sky like shards of splintered
+    stone, their peaks still capped with wisps of winter''s chill even as summer sun
+    beats down upon their flanks. The air is alive with the songs of skypaws, creatures
+    that ride the updrafts and thermals with wings outstretched, their ethereal melodies
+    weaving in and out of the wind. As the seasons turn, the mountains give birth
+    to the mighty River Wyrm, its source a glacial lake that shimmers like liquid
+    moonlight amidst the granite boulders.
+
+
+    The River Wyrm flows eastward into the Endless Expanse Ocean, carving a path through
+    canyons and gorges that twist and turn in impossible ways. Its waters are home
+    to ancient serpentfolk who have dwelled here since the dawn of time, their wisdom
+    and knowledge hidden behind secrets etched into the stone walls of their underwater
+    cities. Along its banks, hidden temples and ruins lie waiting for brave adventurers
+    to uncover their mysteries, their crumbling spires and columns overgrown with
+    vines and creepers that seem to writhe like living serpents.
+
+
+    As night falls across Aethoria, the mountains are set ablaze by a thousand points
+    of light: fireflies dancing in the darkness, campfires burning bright against
+    the starry sky, and lanterns hung from trees like ghostly sentinels. The air is
+    filled with the scent of woodsmoke and roasting meats, carried on the breeze as
+    travelers and locals gather ''neath the stars to share tales and secrets beneath
+    a canopy of twinkling light.'
+  image_prompt: Aethoria's snow-capped mountains meet summer sun, air filled with
+    skypaws' ethereal songs as River Wyrm flows from glacial lake to Endless Expanse
+    Ocean, serpentfolk cities hidden beneath, temples and ruins overgrown with vines
+    amidst firefly-dance-lit night.
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Aethoria.png
+- name: Kyralia
+  description: 'Kyralia''s burning deserts stretch across the horizon like an endless
+    sea of gold and crimson sands. Scorching dunes rise and fall in undulating waves,
+    their crests blown away by fierce gusts that whip through the arid expanse. In
+    the midst of this unforgiving environment, oases burst forth with vibrant life:
+    palm trees sway gently in the breeze, their leaves a deep emerald green; colorful
+    flowers bloom among the sand, adding splashes of bright color to the monochromatic
+    landscape; and crystal-clear waters shimmer like diamonds in the sunlight. The
+    air is thick with the scent of baking earth and acacia trees, a pungent aroma
+    that hangs heavy over the desert floor.
+
+
+    As the sun beats down upon Kyralia''s sands, the land itself seems to come alive.
+    Ripples dance across the dunes as massive sand worms burrow beneath the surface,
+    their tunnels hidden from view but felt through the ground. In the distance, the
+    whispers of ancient sand wraiths carry on the wind, their mournful sighs echoing
+    off the dunes as they weave and dodge through the treacherous landscape. The resilient
+    tribes that call Kyralia home have learned to navigate this unforgiving terrain
+    with ease, their footsteps light upon the shifting sands as they seek out hidden
+    treasures and lost knowledge.
+
+
+    Amidst the harsh beauty of Kyralia''s badlands, ancient ruins lie hidden beneath
+    a shroud of sand and rock. These forgotten relics hold secrets of a bygone era,
+    whispered tales of a long-lost civilization that once thrived in this unforgiving
+    environment. As the winds howl through the desert, archaeologists and treasure
+    hunters converge upon these lost cities, their hearts aflame with wonder as they
+    uncover fragments of a mysterious past. Meanwhile, ruthless bandits prowl the
+    dunes, preying upon unwary travelers who dare to venture into this unforgiving
+    realm.'
+  image_prompt: A sprawling desert continent with endless gold and crimson sands,
+    swaying palm trees, colorful flowers, and shimmering waters, punctuated by ancient
+    ruins hidden beneath a shroud of sand and rock amidst whispers of ancient sand
+    wraiths.
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Kyralia.png
+- name: Xylonia
+  description: 'Misty veils shroud Xylonia''s islands as they rise from the depths
+    like ghostly sentinels, their outlines blurring into the swirling mists that cling
+    to every rocky outcropping. The air is heavy with the scent of damp earth and
+    saltwater, a primordial perfume that wafts on the breeze and draws in sailors
+    with an otherworldly allure. As the sea winds howl through Xylonia''s labyrinthine
+    archipelagos, they weave a hypnotic melody that lures unwary vessels into treacherous
+    channels, where hidden reefs and shoals wait to dash them upon the rocks.
+
+
+    Beneath the mists, enchanted forests writhe like living serpents, their twisted
+    branches grasping for the sky as if in supplication to some ancient power. Within
+    these whispering woods, mischievous fey creatures dance on moonbeams, their laughter
+    echoing through the mist-shrouded glades as they weave spells of enchantment and
+    deception. Here, reclusive sorcerers master the arcane arts within sanctums hidden
+    behind veils of water or woven from threads of starlight, their incantations fueling
+    a subtle magic that seeps into every rock, tree, and grain of sand on Xylonia''s
+    mist-shrouded islands.
+
+
+    As night falls on Xylonia, an unearthly radiance begins to seep from the very
+    earth itself, casting an ethereal glow over the mist-veiled landscape. It is as
+    if the land has awakened, its ancient heartbeat pulsing with a power that draws
+    in those who would seek to tap into its secrets. Those attuned to this subtle
+    energy can feel it coursing through their veins like liquid moonlight, a potent
+    elixir that whispers secrets of the cosmos and weaves new patterns within the
+    fabric of reality. And yet, Xylonia''s magic comes at a price: those who would
+    wield its power must first learn to listen to its whispers, to navigate the labyrinthine
+    paths that wind through the mist-shrouded heart of this mystical realm.'
+  image_prompt: Misty veils shroud Xylonia's islands rising from depths like ghostly
+    sentinels amidst swirling mists and primordial scents of damp earth and saltwater.
+    Enchanted forests writhe beneath as fey creatures dance in moonbeams weaving spells
+    of enchantment and deception.
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Xylonia.png
 - name: Elyria
-  description: 'Glowing auroras dance across Aethoria''s night sky, casting an ethereal
-    light on snow-capped mountains that stretch towards the frozen peaks of the Crystal
-    Spires. Glacial lakes shimmer like polished mirrors, reflecting the stars above
-    as the Aetherean Tides crash against the shores in a relentless rhythm. The icy
-    winds howl through the valleys, sculpting intricate patterns in the frost that
-    coats every surface. In this unforgiving landscape, the dwarven clans of Kragnir
-    delve deep into the earth, seeking precious gems and metals within the ancient
-    rock.
+  description: 'The continent of Elyria pulsates with life as towering trees stretch
+    towards the sky, their canopies a vibrant tapestry of colors that shift and change
+    with every passing moment. Exotic birds flit between the branches, their songs
+    weaving together in a symphony of sound that resonates through the air. The scent
+    of blooming flowers wafts on the breeze, drawing insects to the lush vegetation
+    that carpets the forest floor. Ancient Elyrian wisdom has long acknowledged the
+    intricate balance within this realm, and their shamans continue to communicate
+    with the land''s ancient spirits in a deep and abiding respect.
 
 
-    As the sun rises over Elyria, its rays ignite the endless dunes of Eridoria''s
-    desert expanse, casting a warm glow across the shifting sands. Oases burst forth
-    like green oases in this arid landscape, each one a haven for travelers and traders
-    who seek refuge from the burning sun. The city-state of Zerzura stands as a shining
-    beacon on the edge of this unforgiving realm, its people renowned for their mastery
-    of magic and alchemy that weaves a subtle spell of protection around their sacred
-    city. In the distance, the twisted forests of Malumbra writhe like living darkness
-    in Nefaria''s mist-shrouded depths.
+    The primeval jungles of Elyria are home to an astonishing array of creatures,
+    from massive sauroposeidons that roam the forest floor to iridescent butterflies
+    that dance on the wind. The trees themselves seem alive, their trunks twisted
+    with age and wisdom as they reach for the sky like colossal pillars. The rustle
+    of leaves, the chirping of birds, and the distant rumble of waterfalls blend together
+    in a perpetual symphony, creating an atmosphere of enchantment and wonder that
+    draws travelers from across Aethoria to this sacred land. Elyrian shamans weave
+    their magic within these ancient forests, harnessing the power of the natural
+    world to maintain the balance and harmony that sustains this vibrant ecosystem.
 
 
-    In Valtoria''s south, ancient ruins stretch towards the horizon, worn by the relentless
-    passage of time into mysterious artifacts and hidden temples waiting to be unearthed
-    by brave adventurers. The city-state of Eldarath stands as a beacon of knowledge
-    and wisdom on the edge of this vast expanse, its scholars delving deep into the
-    mysteries of Valtoria''s forgotten past. As the winds howl across the shifting
-    dunes, whispers of long-lost civilizations echo through the sands, beckoning those
-    who would uncover the secrets hidden beneath the desert''s waves.'
-  image_prompt: 'A continent with varied landscapes: glowing auroras dance across
-    snow-capped mountains in Aethoria''s night sky; shifting dunes of Eridoria''s
-    desert expanse meet twisted forests of Malumbra and ancient ruins of Valtoria,
-    with cities like Kragnir, Zerzura, and Eldarath.'
+    Deeper within the jungle, where the canopy is so dense it filters out most of
+    the sunlight, lies a hidden realm of mystical energies. The air vibrates with
+    an otherworldly energy as Elyrian shamans delve into the mysteries of the natural
+    world. Ancient artifacts scattered throughout the forest hold secrets and stories
+    that have been lost to time, waiting for those with the ears to listen and the
+    heart to understand. In this enchanted land, the past and present converge, as
+    the whispers of ancient civilizations blend with the songs of modern shamans in
+    a majestic celebration of life, death, and rebirth.'
+  image_prompt: A vibrant continent of Elyria teeming with life, towering trees, exotic
+    birds, blooming flowers, ancient wisdom, shamans communicating with the land's
+    spirits in harmony and balance amidst a lush jungle filled with sauroposeidons
+    and iridescent butterflies.
   image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Elyria.png
+- name: Tharros
+  description: 'Snowflakes dance across the Tharrosian skies, casting a serene silence
+    over the frozen wasteland below. Glaciers stretch as far as the eye can see, their
+    icy surfaces etched with ancient rivers of blue that glow like ethereal veins.
+    Towering icebergs rise from the frozen seas, their crystalline facades reflecting
+    the kaleidoscope of colors dancing above them. Frosty mists swirl around the bases
+    of these giants, creating an otherworldly aura as if the land itself were a living,
+    breathing entity.
+
+
+    Beneath the surface, Tharros''s permafrost conceals secrets waiting to be unearthed
+    by brave adventurers and intrepid explorers. Glittering ice caves shimmer like
+    diamonds in the pale light, their crystalline formations refracting hues of blue,
+    green, and gold. Ancient artifacts lie buried beneath the frozen earth, relics
+    of a long-forgotten civilization that mastered the arcane arts of this unforgiving
+    environment. Some say that on certain nights, when the aurora displays paint the
+    skies with vibrant colors, the ice wizards of Tharros can be seen harnessing this
+    energy to weave powerful spells.
+
+
+    As night descends upon Tharros, the stars twinkle like a million shards of ice
+    scattered across the velvet expanse above. The air is crisp and biting, carrying
+    the whispers of ancient magic on its wind. Enigmatic ice wizards roam these frozen
+    wastes, their eyes aglow with an inner light as they tap into the raw power of
+    the elements. Their footsteps quiet upon the snow, leaving behind only faint impressions
+    that disappear like wisps of smoke in the chill air. In this harsh and unforgiving
+    environment, only the hardiest of creatures can survive – and yet, it is here
+    that the secrets of Tharros await those brave enough to seek them out.'
+  image_prompt: A frozen continent of Tharros with snowflakes dancing across the skies
+    casting a serene silence over glaciers and icebergs reflecting kaleidoscope colors
+    while ancient rivers of blue glow beneath the surface amidst whispers of magic
+    and aurora displays.
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Tharros.png

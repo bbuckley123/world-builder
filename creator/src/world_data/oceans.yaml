@@ -1,1 +1,90 @@
-[]
+- name: Aethoria's Endless Expanse
+  description: 'Aethoria''s Endless Expanse stretches northward from Aethoria''s rugged
+    shores, its waves crashing against the continent''s ancient rocks as if trying
+    to wear them down with relentless persistence. The ocean''s surface is a kaleidoscope
+    of blues and greens, shifting hues that seem to change with every movement of
+    the sun. Schools of bioluminescent fish dart through the water like diamonds scattered
+    across the darkness, their ethereal glow illuminating hidden reefs and underwater
+    caverns.
+
+
+    As the tides rise and fall, Aethoria''s Endless Expanse releases a symphony of
+    sounds: the creaking of wooden ships against the hulls, the crashing of waves
+    against rocky shores, and the mournful cries of sea creatures that echo through
+    the mist-shrouded waters. The ocean''s moods shift with the seasons, sometimes
+    growing calm and glassy in the summer months, while other times it churns with
+    fury, as if trying to match the turbulent storms that rage across Aethoria''s
+    skies.
+
+
+    Beneath the surface, ancient secrets slumber, waiting for brave explorers to stumble
+    upon hidden ruins or long-lost artifacts. Sunken cities lie hidden beneath the
+    waves, their crumbling spires and temples covered in coral and anemones, while
+    mysterious sea creatures roam the depths, their forms undulating through the darkness
+    like living shadows. Aethoria''s Endless Expanse holds many secrets, and those
+    who dare to delve into its mysteries will be rewarded with wonders beyond their
+    wildest dreams.'
+  image_prompt: 'Aethoria''s Endless Expanse: a vast ocean of shifting blues and greens,
+    home to bioluminescent fish, hidden reefs, underwater caverns, sunken cities,
+    and mysterious sea creatures amidst ancient rocks and turbulent tides.'
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Aethoria's_Endless_Expanse.png
+- name: Kyrium's Shimmering Abyss
+  description: 'Kyrium''s Shimmering Abyss churns with an otherworldly energy, its
+    dark waters seeming to absorb the light around it like a void. Tides rise and
+    fall with an eerie silence, as if the ocean itself is holding its breath in anticipation
+    of something. Schools of bioluminescent fish dart through the darkness, leaving
+    trails of glittering sparks that flicker out like dying stars.
+
+
+    The Abyss''s depths are said to be unfathomable, with some claiming that even
+    the bravest explorers who dare to dive into its darkness never return. Others
+    whisper of strange creatures lurking beneath the surface, their forms shifting
+    and flowing like the shadows on a moonless night. As the ocean''s waves crash
+    against the shores of Aethoria, they create a mesmerizing display of iridescent
+    colors that seem to shift and change with every movement.
+
+
+    Despite its fearsome reputation, Kyrium''s Shimmering Abyss is also said to be
+    a place of ancient wisdom, where forgotten knowledge and lost lore slumber in
+    the depths. Some believe that the ocean holds the secrets of Aethoria''s creation,
+    and that those who can unlock its mysteries will be granted unimaginable power.
+    Others speak of the Abyss as a gateway to other realms, a portal to dimensions
+    beyond their own. Whether truth or legend, one thing is certain: Kyrium''s Shimmering
+    Abyss remains an enigma, a mystery waiting to be unraveled by brave and intrepid
+    souls.'
+  image_prompt: 'Kyrium''s Shimmering Abyss: Dark waters absorb light like a void,
+    eerie silence punctuated by bioluminescent fish trails of glittering sparks amidst
+    unfathomable depths and shifting shadows, iridescent colors dancing in the waves
+    crashing against Aethoria''s shores.'
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Kyrium's_Shimmering_Abyss.png
+- name: Namarie's Eternal Surge
+  description: 'Namarie''s Eternal Surge churns and foams with unrelenting fury, its
+    waves crashing against the southern shores of Aethoria as if to reclaim the land
+    that lies before it. The ocean''s depths are a labyrinth of dark tunnels and hidden
+    caverns, home to giant sea serpents that slumber fitfully amidst the shadows.
+    These behemoths stir occasionally, their massive bodies breaching the surface
+    with thunderous roars that shake the foundations of the surrounding continents.
+
+
+    As Namarie''s Eternal Surge rages on, its turbulent waters churn up maelstroms
+    of churning foam and swirling whirlpools that can drag even the sturdiest vessels
+    down to a watery grave. Schools of razor-toothed leviathans dart through the depths,
+    their iridescent scales flashing like beacons in the dim light that filters down
+    from above. The ocean''s surface is pockmarked with storm systems that brew and
+    intensify with each passing moment, unleashing torrents of rain and hail that
+    threaten to engulf entire cities.
+
+
+    Yet amidst this chaos, Namarie''s Eternal Surge holds secrets that have captivated
+    the imaginations of Aethoria''s inhabitants for centuries. Rumors speak of a hidden
+    city deep within the ocean''s depths, where an ancient civilization has been said
+    to thrive in harmony with the surrounding sea creatures. Some claim to have glimpsed
+    the city''s spires and towers glinting like diamonds through the waves, while
+    others whisper of a mystical artifact hidden within its heart that holds the key
+    to unlocking the secrets of the ocean itself. Whether truth or myth, Namarie''s
+    Eternal Surge remains an enigma, a siren''s call to those brave enough to tempt
+    its fury.'
+  image_prompt: 'Namarie''s Eternal Surge: A maelstrom of dark waters and churning
+    foam crashes against the shores of Aethoria, home to giant sea serpents and hidden
+    cities deep within its labyrinthine depths.'
+  image_path: /Users/brianbuckley/workspaces/world_builder/creator/src/world_data/continents/Namarie's_Eternal_Surge.png

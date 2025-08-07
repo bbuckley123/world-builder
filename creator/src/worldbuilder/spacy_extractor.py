@@ -9,7 +9,6 @@ KEYWORDS_CONTINENT = {"continent", "landmass", "region", "realm", "territory"}
 KEYWORDS_OCEAN = {"ocean", "sea", "waters", "current", "deep"}
 
 def extract_world_name(text: str) -> str:
-    print(f"BEGIN SPACY: text is ${text}")
     doc = nlp(text)
 
     for sent in doc.sents:
@@ -18,7 +17,7 @@ def extract_world_name(text: str) -> str:
                 span = token.text
                 context_window = sent[max(0, token.i -5): token.i + 5].text.lower()
                 if any(keyword in context_window for keyword in KEYWORDS_WORLD):
-                    print(f"Spacy found this name: ${span}")
+                    print(f"Spacy found this name: {span}")
                     return span
     print("SpaCy could not find a world name!")
 

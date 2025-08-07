@@ -2,11 +2,13 @@ from pathlib import Path
 
 # Project root is one level up from /src/worldbuilder
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
+OUTPUT_DIR = PROJECT_ROOT / "output"
 DATA_DIR = PROJECT_ROOT / "world_data"
-PROMPTS_PATH = Path(__file__).resolve().parent / "prompts"
+PROMPTS_PATH = SRC_DIR / "prompts"
 
 # Common files
-WORLD_YAML = DATA_DIR / "world.yaml"
+WORLD_YAML = OUTPUT_DIR / "world.yaml"
 CONTINENTS_YAML = DATA_DIR / "continents.yaml"
 OCEANS_YAML = DATA_DIR / "oceans.yaml"
 WORLD_IMG = DATA_DIR / "world.png"
@@ -14,10 +16,6 @@ WORLD_IMG = DATA_DIR / "world.png"
 # Subfolders
 CONTINENT_IMG_DIR = DATA_DIR / "continents"
 OCEAN_IMG_DIR = DATA_DIR / "oceans"
-
-# Ensure required dirs exist
-for path in [DATA_DIR, CONTINENT_IMG_DIR, OCEAN_IMG_DIR]:
-    path.mkdir(parents=True, exist_ok=True)
 
 def sanitize_name(name: str) -> str:
     """Sanitize a name so it's safe to use as a filename."""

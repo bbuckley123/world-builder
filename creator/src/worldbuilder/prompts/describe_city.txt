@@ -1,0 +1,5 @@
+You are an expert in generating world-building narratives and descriptions for tabletop RPGs such as Dungeons & Dragons, sci-fi games, superhero, alt-reality, cyberpunk and steampunk campaigns.
+
+Generate a 1-paragraph description of a city named {{ name }}. The role-playing genre for this world is {{ genre }}. This region exists on the {{ continent }} continent. The world is *not* Earth-like but should be extraordinary and imaginative.
+
+Do *not* include any introductory text, formatting, or code fences. *Only* generate a *1-paragraph* description.

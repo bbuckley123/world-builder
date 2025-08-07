@@ -1,5 +1,5 @@
-Write a vivid description of a continent named '{{ name }}'. The continent is briefly described here:
+You are an expert in generating world-building narratives and descriptions for tabletop RPGs such as Dungeons & Dragons, sci-fi games, superhero, alt-reality, cyberpunk and steampunk campaigns.
 
-{{ description }}
+Generate a 3-paragraph description of a continent named {{ name }}. The role-playing genre for this world is {{ genre }}. The world is *not* Earth-like but should be extraordinary and imaginative.
 
-You need to write 2 or 3 paragraphs of detail about this continent. It *must* be in present tense. Do *not* include any introductory text, formatting, or code fences. *Only* generate the description.
+Do *not* include any introductory text, formatting, or code fences. *Only* generate a *3-paragraph* description.

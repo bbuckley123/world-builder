@@ -1,5 +1,5 @@
 import yaml
-from typing import TypedDict, List, Dict, Optional
+from typing import TypedDict, List
 from langgraph.graph import StateGraph, END
 from langchain_ollama import OllamaLLM
 from worldbuilder.image_generator import generate_image
@@ -8,11 +8,25 @@ from worldbuilder.prompt_loader import load_prompt
 from worldbuilder.spacy_extractor import extract_continent_and_ocean_names
 from pathlib import Path
 
+class Environment(TypedDict):
+    name: str
+    description: str
+    image_prompt: str
+    image_path: str
+
+class City(TypedDict):
+    name: str
+    description: str
+    image_prompt: str
+    image_path: str
+
 class Continent(TypedDict):
     name: str
     description: str
     image_prompt: str
     image_path: str
+    environments: list[Environment]
+    cities: list[City]
 
 class Ocean(TypedDict):
     name: str
@@ -26,16 +40,6 @@ class WorldDetailState(TypedDict):
     ocean_names: List[str]
     continents: List[Continent]
     oceans: List[Ocean]
-
-
-
-def extract_names(state: WorldDetailState) -> WorldDetailState:
-    continents, oceans = extract_continent_and_ocean_names(state['world_description'])
-    return {
-        **state,
-        "continent_names": continents,
-        "ocean_names": oceans,
-    }
 
 def generate_continent_and_ocean_details(state: WorldDetailState, llm: OllamaLLM) -> WorldDetailState:
     continents = []
@@ -75,39 +79,6 @@ def generate_continent_and_ocean_details(state: WorldDetailState, llm: OllamaLLM
         "oceans": oceans,
     }
 
-def build_world_detail_graph(llm: OllamaLLM):
-    def wrap(func):
-        return lambda state: func(state, llm)
-    
-    def wrap_state(func):
-        return lambda state: func(state)
-
-    builder = StateGraph(WorldDetailState)
-
-    builder.add_node("extract_names", wrap_state(extract_names))
-    builder.add_node("generate_details", wrap(generate_continent_and_ocean_details))
-    builder.add_node("save_outputs", save_outputs_to_yaml)
-
-    builder.set_entry_point("extract_names")
-    builder.add_edge("extract_names", "generate_details")
-    builder.add_edge("generate_details", "save_outputs")
-    builder.add_edge("save_outputs", END)
-
-    return builder.compile()
-
-
-def run_continent_ocean_generation(llm: OllamaLLM, world_description: str):
-    graph = build_world_detail_graph(llm)
-    initial_state = {
-        "world_description": world_description,
-        "continent_names": [],
-        "ocean_names": [],
-        "continents": [],
-        "oceans": [],
-    }
-    result = graph.invoke(initial_state)
-    return result
-
 def save_outputs_to_yaml(state: WorldDetailState) -> WorldDetailState:
     continents_path = CONTINENTS_YAML
     oceans_path = OCEANS_YAML
@@ -122,4 +93,38 @@ def save_outputs_to_yaml(state: WorldDetailState) -> WorldDetailState:
     print(f"✅ Saved {oceans_path}")
 
     return state
+
+def build_world_detail_graph(llm: OllamaLLM):
+    def wrap(func):
+        return lambda state: func(state, llm)
+    
+    def wrap_state(func):
+        return lambda state: func(state)
+
+    builder = StateGraph(WorldDetailState)
+
+    builder.add_node("generate_details", wrap(generate_continent_and_ocean_details))
+    builder.add_node("save_outputs", save_outputs_to_yaml)
+
+    builder.set_entry_point("generate_details")
+
+    builder.add_edge("generate_details", "save_outputs")
+    builder.add_edge("save_outputs", END)
+
+    return builder.compile()
+
+
+def run_continent_ocean_generation(llm: OllamaLLM, world_state):
+    graph = build_world_detail_graph(llm)
+    initial_state = {
+        "world_description": world_state["description"],
+        "continent_names": world_state["continent_names"],
+        "ocean_names": world_state["ocean_names"],
+        "continents": [],
+        "oceans": [],
+    }
+    result = graph.invoke(initial_state)
+    return result
+
+
 

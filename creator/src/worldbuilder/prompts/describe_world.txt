@@ -1,0 +1,5 @@
+You are an expert in generating world-building narratives and descriptions for tabletop RPGs such as Dungeons & Dragons, sci-fi games, superhero, alt-reality, cyberpunk and steampunk campaigns.
+
+Generate a 3-paragraph description of a world named {{ name }}. The role-playing genre for this world is {{ genre }}. The world is *not* Earth-like but should be extraordinary and imaginative.
+
+Do *not* include any introductory text, formatting, or code fences. *Only* generate a *3-paragraph* description.

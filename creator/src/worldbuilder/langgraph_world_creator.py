@@ -3,18 +3,19 @@ from langchain_ollama import OllamaLLM
 from typing import TypedDict, Annotated
 import yaml
 import random
+import operator
+from pprint import pprint
 from worldbuilder.image_generator import generate_image
 from worldbuilder.paths import WORLD_IMG, WORLD_YAML
 from worldbuilder.prompt_loader import load_prompt
-from worldbuilder.spacy_extractor import extract_world_name
 
 class WorldState(TypedDict):
-    name: Annotated[str, lambda a, b : b]
+    name: Annotated[str, lambda a, b : b if not a else a]
     genre: Annotated[str, lambda a, b : b]
-    continent_names: Annotated[list[str], lambda a, b : b]
-    ocean_names: Annotated[list[str], lambda a, b : b]
-    description: Annotated[str, lambda a, b : b]
-    image_prompt: Annotated[str, lambda a, b : b]
+    continent_names: Annotated[list[str], lambda a, b : b if not a else a]
+    ocean_names: Annotated[list[str], lambda a, b : b if not a else a]
+    description: Annotated[str, lambda a, b : b if not a else a]
+    image_prompt: Annotated[str, lambda a, b : b if not a else a]
 
 # Prompt steps
 def generate_genre(state: WorldState, llm: OllamaLLM) -> WorldState:
@@ -29,29 +30,32 @@ def generate_genre(state: WorldState, llm: OllamaLLM) -> WorldState:
     weights = [40, 20, 10, 10, 10, 10]
 
     selected_genre = random.choices(genres, weights=weights, k=1)[0]
+    print(f"The selected genre is: {selected_genre}")
     return {**state, "genre": selected_genre}
+
+def generate_world_name(state: WorldState, llm: OllamaLLM) -> WorldState:
+    prompt = load_prompt("generate_world_name.txt", {"genre": state["genre"]})
+    result = llm.invoke(prompt).strip()
+    print(f"generated world name: {result}")
+    return {**state, "name": result}
 
 def generate_continent_names(state: WorldState, llm: OllamaLLM) -> WorldState:
     prompt = load_prompt("generate_continent_names.txt", {"genre": state["genre"]})
     result = llm.invoke(prompt).strip()
     items: list[str] = [item.strip() for item in result.split(",")]
+    print(f"generated continent names: {items}")
     return {**state, "continent_names": items}
 
 def generate_ocean_names(state: WorldState, llm: OllamaLLM) -> WorldState:
     prompt = load_prompt("generate_ocean_names.txt", {"genre": state["genre"]})
     result = llm.invoke(prompt).strip()
     items: list[str] = [item.strip() for item in result.split(",")]
+    print(f"generated ocean names: {items}")
     return {**state, "ocean_names": items}
 
-def wait_for_name_generation(state: WorldState) -> WorldState:
-    return state
-
-def wait_for_name_generation_router(state: WorldState) -> str:
-    if state["continent_names"] and state["ocean_names"]:
-        return "proceed"
-    return "wait"
-
 def generate_world_description(state: WorldState, llm: OllamaLLM) -> WorldState:
+    print("Beginning to generate world description. This is what the sate looks like")
+    pprint(state)
     input = {
         "genre": state["genre"],
         "ocean_names": state["ocean_names"],
@@ -61,14 +65,8 @@ def generate_world_description(state: WorldState, llm: OllamaLLM) -> WorldState:
     result = llm.invoke(prompt).strip()
     return {**state, "description": result}
 
-def extract_world_name_from_state(state: WorldState) -> WorldState:
-    description = state["description"]
-    name = extract_world_name(description)
-    return {**state, "name": name}
-
 def generate_image_prompt(state: WorldState, llm: OllamaLLM) -> WorldState:
     result = llm.invoke(f"Create a prompt for a Stable Diffusion image generator to generate an image for a world with the following description <begin-description> '{state['description']}' <end-description>. You can be creative. You can describe the whole world, or describe a very interesting part of the world. But you have limitations. Do *not* communicate with the end user. *Only* generate a stable diffusion prompt and nothing more. You *must* stay under 50 words.")
-    print("🔍 Raw image_prompt result:", result, type(result))
     return {**state, "image_prompt": result.strip()}
 
 def generate_image_from_prompt(state: WorldState, _) -> WorldState:
@@ -88,6 +86,8 @@ def write_world_yaml(state: WorldState) -> None:
                 "name": state["name"],
                 "genre": state["genre"],
                 "description": state["description"],
+                "continent_names": state["continent_names"],
+                "ocean_names": state["ocean_names"],
                 "image_prompt": state["image_prompt"]
             },
             f,
@@ -106,11 +106,10 @@ def build_and_run_graph(llm: OllamaLLM) -> None:
     builder = StateGraph(WorldState)
 
     builder.add_node("generate_genre", wrap(generate_genre))
+    builder.add_node("generate_world_name", wrap(generate_world_name))
     builder.add_node("generate_continent_names", wrap(generate_continent_names))
     builder.add_node("generate_ocean_names", wrap(generate_ocean_names))
-    # builder.add_node("wait_for_name_generation", wrap_state(wait_for_name_generation))
     builder.add_node("generate_world_description", wrap(generate_world_description))
-    builder.add_node("extract_world_name_from_state", wrap_state(extract_world_name_from_state))
     builder.add_node("generate_image_prompt", wrap(generate_image_prompt))
     builder.add_node("generate_image_from_prompt", wrap(generate_image_from_prompt))
     builder.add_node("finalize", lambda state: (write_world_yaml(state), state)[1])
@@ -119,10 +118,11 @@ def build_and_run_graph(llm: OllamaLLM) -> None:
 
     builder.add_edge("generate_genre", "generate_continent_names")
     builder.add_edge("generate_genre", "generate_ocean_names")
+    builder.add_edge("generate_genre", "generate_world_name")
     builder.add_edge("generate_continent_names", "generate_world_description")
-    builder.add_edge("generate_ocean_names","generate_world_description")
-    builder.add_edge("generate_world_description", "extract_world_name_from_state")
-    builder.add_edge("extract_world_name_from_state", "generate_image_prompt")
+    builder.add_edge("generate_ocean_names", "generate_world_description")
+    builder.add_edge("generate_world_name", "generate_world_description")
+    builder.add_edge("generate_world_description", "generate_image_prompt")
     builder.add_edge("generate_image_prompt", "generate_image_from_prompt")
     builder.add_edge("generate_image_from_prompt", "finalize")
     builder.add_edge("finalize", END)
@@ -131,8 +131,8 @@ def build_and_run_graph(llm: OllamaLLM) -> None:
     graph.invoke({
         "name": None,
         "genre": None,
-        "continent_names": None,
-        "ocean_names": None,
+        "continent_names": [],
+        "ocean_names": [],
         "description": None,
         "image_prompt": None
     })

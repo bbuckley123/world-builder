@@ -15,4 +15,4 @@ def main() -> None:
     world_data = yaml.safe_load(WORLD_YAML.read_text(encoding="utf-8"))
 
     print("🗺️  Running continentsbuilder...")
-    run_continent_ocean_generation(model, world_data["description"])
+    run_continent_ocean_generation(model, world_data)
