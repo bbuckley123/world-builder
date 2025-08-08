@@ -1,18 +1,19 @@
-// src/pages/OceanDetailPage.jsx
+// src/pages/OceanDetailPage.tsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  CssBaseline,
-  AppBar,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { CssBaseline, AppBar, Toolbar, Typography } from "@mui/material";
 import yaml from "js-yaml";
 import EntityLayout from "../components/EntityLayout";
 
-export const OceanDetailPage = () => {
-  const { worldId, oceanId } = useParams();
-  const [ocean, setOcean] = useState(null);
+interface Ocean {
+  name: string;
+  description?: string;
+  image_path?: string;
+}
+
+export const OceanDetailPage: React.FC = () => {
+  const { worldId, oceanId } = useParams<{ worldId: string; oceanId: string }>();
+  const [ocean, setOcean] = useState<Ocean | null>(null);
 
   useEffect(() => {
     if (!worldId || !oceanId) return;
@@ -20,12 +21,13 @@ export const OceanDetailPage = () => {
     fetch(`/worlds/${worldId}/world.yaml`)
       .then((res) => res.text())
       .then((text) => {
-        const data = yaml.load(text);
-        const targetName = decodeURIComponent(oceanId);
+        const data = yaml.load(text) as { oceans?: Ocean[] } | undefined;
+        const target = decodeURIComponent(oceanId);
         const found =
           data?.oceans?.find(
-            (o) => (o.name || "").toLowerCase() === targetName.toLowerCase()
-          ) || null;
+            (o) => (o.name || "").toLowerCase() === target.toLowerCase()
+          ) ?? null;
+
         setOcean(found);
       })
       .catch((err) => {
@@ -34,6 +36,10 @@ export const OceanDetailPage = () => {
   }, [worldId, oceanId]);
 
   if (!ocean || !worldId) return null;
+
+  const imgPath = ocean.image_path
+    ? `/worlds/${worldId}/${ocean.image_path.replace(/^\/+/, "")}`
+    : undefined;
 
   return (
     <>
@@ -48,16 +54,17 @@ export const OceanDetailPage = () => {
         worldId={worldId}
         title={ocean.name}
         subtitle="Ocean"
-        imagePath={ocean.image_path ? `/worlds/${worldId}/${ocean.image_path}` : undefined}
+        imagePath={imgPath}
         description={ocean.description}
-        // Oceans currently have no children:
         childrenItems={[]}
         breadcrumbLinks={[
           { label: "Worlds", href: "/" },
-          { label: worldId, href: `/worlds/${worldId}` },
-          { label: ocean.name }, // current page (no href)
+          { label: worldId, href: `/worlds/${worldId}` }, 
+          { label: ocean.name }, // current page
         ]}
       />
     </>
   );
 };
+
+export default OceanDetailPage;
