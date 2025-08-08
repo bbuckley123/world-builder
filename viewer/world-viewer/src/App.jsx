@@ -5,6 +5,8 @@ import { WorldListPage } from './views/WorldListPage';
 import { WorldDetailPage } from './views/WorldDetailPage';
 import { ContinentDetailPage } from './views/ContinentDetailPage';
 import { OceanDetailPage } from './views/OceanDetailPage';
+import { RegionDetailPage } from './views/RegionDetailPage';
+import { CityDetailPage } from './views/CityDetailPage';
 import { RealmView } from './views/RealmView';
 import { ContinentView } from './views/ContinentView';
 import { RegionView } from './views/RegionView';
@@ -20,6 +22,8 @@ function App() {
         <Route path="/worlds/:worldId" element={<WorldDetailPage />} />
         <Route path="/worlds/:worldId/continents/:continentId" element={<ContinentDetailPage />} />
         <Route path="/worlds/:worldId/oceans/:oceanId" element={<OceanDetailPage />} />
+        <Route path="/worlds/:worldId/continents/:continentId/regions/:regionId" element={<RegionDetailPage />} />
+        <Route path="/worlds/:worldId/continents/:continentId/cities/:cityId" element={<CityDetailPage />} />
         <Route path="/continent/:id" element={<ContinentView />} />
         <Route path="/region/:id" element={<RegionView />} />
         <Route path="/locality/:id" element={<LocalityView />} />
