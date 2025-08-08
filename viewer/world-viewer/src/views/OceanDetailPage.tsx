@@ -54,7 +54,7 @@ export const OceanDetailPage = () => {
         childrenItems={[]}
         breadcrumbLinks={[
           { label: "Worlds", href: "/" },
-          { label: worldId, href: `/world/${worldId}` },
+          { label: worldId, href: `/worlds/${worldId}` },
           { label: ocean.name }, // current page (no href)
         ]}
       />

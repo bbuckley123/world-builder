@@ -119,6 +119,21 @@ export const ContinentDetailPage: React.FC = () => {
         </Toolbar>
       </AppBar>
 
+      <EntityLayout
+        worldId={worldId}
+        title={continent.name}
+        subtitle="Continent"
+        imagePath={`/worlds/${worldId}/${continent.image_path?.replace(/^\/+/, "")}`}
+        description={continent.description}
+        // No children here since you render Cities/Regions grids below
+        childrenItems={[]}
+        breadcrumbLinks={[
+          { label: "Worlds", href: "/" },
+          { label: worldId!, href: `/world/${worldId}` },
+          { label: continent.name }, // current page
+        ]}
+      />
+
       {/* Cities — full-width grid with onClick navigation */}
       {renderSection("Cities", continent.cities ?? [], (item) =>
         `/worlds/${worldId}/continents/${encodeURIComponent(continent.name)}/cities/${encodeURIComponent(item.name)}`

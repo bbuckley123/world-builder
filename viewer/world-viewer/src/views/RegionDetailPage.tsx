@@ -64,8 +64,8 @@ export const RegionDetailPage: React.FC = () => {
         childrenItems={[]}
         breadcrumbLinks={[
           { label: "Worlds", href: "/" },
-          { label: worldId!, href: `/world/${worldId}` },
-          { label: decodeURIComponent(continentId!), href: `/world/${worldId}/continent/${continentId}` },
+          { label: worldId!, href: `/worlds/${worldId}` },
+          { label: decodeURIComponent(continentId!), href: `/worlds/${worldId}/continents/${continentId}` },
           { label: region.name },
         ]}
       />
