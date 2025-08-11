@@ -1,108 +1,108 @@
-name: Tenriethor
-genre: High Fantasy
-description: 'Tenriethor is an archipelago of crystalline islands suspended within
-  the celestial expanse of the Astral Sea, where iridescent clouds perpetually congregate
-  to weave auroral tapestries across the sky. The islands themselves are manifestations
-  of sentient crystal, their faceted surfaces reflecting the accumulated memories
-  and emotions of eons past. Each island is a distinct entity with its own unique
-  resonance, influencing the thoughts and actions of those who dwell upon it – whether
-  mortal or ancient being.
+name: Nyxoria Primevalis
+genre: Space Fantasy
+description: 'Nyxoria Primevalis hangs like a lantern in the void, a terrestrial paradise
+  amidst the swirling vortex of the Astral Rift. This celestial sapphire is comprised
+  of iridescent cloud-wracked islands that drift through the cosmos on tethers of
+  glittering silver mist. The landscape shimmers with an otherworldly luminescence
+  as Nyxoria''s crystalline core resonates in harmony with the celestial harmonics,
+  imbuing its atmosphere with a kaleidoscope of colors that dance across the horizon
+  like auroral spectrums.
 
 
-  As one navigates the skies between the islands, they''ll discover that the Astral
-  Sea is home to an array of fantastical creatures: skywhales with ethereal song harmonies,
-  wispy cloudstriders that can traverse the expanse on currents of air, and star-tailed
-  serpents that ride solar flares like celestial chariots. These denizens of the Astral
-  Sea are not just simple beasts; they hold secrets and mysteries that only reveal
-  themselves to those attuned to the harmonic frequencies of Tenriethor.
+  The denizens of Nyxoria Primevalis are an eclectic pantheon of sentient species
+  that have evolved to thrive within this fantastical environment. Luminari, ethereal
+  beings crafted from starlight and infused with an essence of pure magic, weave their
+  luminescent auras into the fabric of reality. Shadowkin, shape-shifters born from
+  the shadows themselves, roam the twilight expanse as silent predators and enigmatic
+  mystics. Meanwhile, the Ky''rennei, crystalline sentinels attuned to the planet''s
+  vibrational frequencies, stand vigilant as guardians of Nyxoria''s delicate balance.
 
 
-  Beneath the crystal spires and wispy clouds, ancient ruins whisper tales of a lost
-  civilization – the Elder Architects who crafted the very fabric of reality. Their
-  knowledge is encoded within the crystalline matrix, waiting for brave adventurers
-  to decipher the hidden patterns and unlock the secrets of Tenriethor''s creation.
-  The whispers of the past are ever-shifting, as if the land itself remembers events
-  long forgotten by mortal minds, hinting at a deeper truth: that the very fabric
-  of reality is woven from the dreams of the celestial architects.'
+  Riftstorms, turbulent tempests born from the Astral Rift''s chaotic energy, periodically
+  assail the fragile equilibrium of Nyxoria Primevalis. These cataclysmic events imbue
+  the world with unpredictable pockets of reality distortion, allowing fragments of
+  parallel universes to seep into the cosmos and merge with Nyxoria''s fabric. The
+  resultant distortions manifest as enigmatic anomalies: quantum ruins, ancient artifacts
+  forged from alternate realities, and forgotten technologies that whisper secrets
+  to those attuned to their frequencies. Those who navigate this labyrinthine world
+  must unravel its mysteries before the Riftstorms consume them whole.'
 continents:
 - name: Aethoria
   regions:
-  - name: Glimmering Spires of Aethoria
-    description: Glimmering Spires of Aethoria rise like shards of splintered starlight
-      from the heart of the continent, a labyrinthine metropolis of crystalline spires
-      that pierce the sky and seem to defy gravity's gentle grasp. Delicate filigree
-      bridges weave between the towering structures, each one etched with ancient
-      runes that glow softly in hues of sapphire, amethyst, and rose, casting a kaleidoscope
-      of colors across the city's streets and canals. As night falls, the Spires erupt
-      into a dazzling display of luminescence, as if the very essence of the stars
-      had been distilled within their crystalline facades, bathing Aethoria in an
-      ethereal light that beckons travelers to explore the wonders hidden within its
-      glittering heart.
+  - name: Aetherswamp
+    description: Aetherswamp sprawls across the northwestern edge of Aethoria's sprawling
+      continent, an eternal twilight realm where iridescent mists writhe like living
+      serpents through twisted silken trees that pierce the low-hanging sky with crystalline
+      spires. Here, the land itself appears to be a sentient being, its soggy expanse
+      pulsing with a maddening rhythm that echoes through the dense canopy of bio-luminescent
+      fungi and spectral blooms that paint the air with colors both familiar and yet
+      utterly alien. Amidst this dreamscape, glimmering pathways forged from polished
+      stardust thread their way through Aetherswamp's seemingly endless labyrinth,
+      beckoning intrepid travelers to venture deeper into a realm where gravitational
+      waves warp the fabric of reality, and whispers of ancient star civilizations
+      linger on every whispering breeze.
   cities:
-  - name: Brindlemark Village
-    description: Perched atop a series of jagged, obsidian-hued spires that thrust
-      from the twisted black rock known as the Spine of Aethoria, Brindlemark Village
-      clings to existence like a delicate gossamer web clinging to the razor's edge
-      of a wind-whipped precipice. Its inhabitants – sturdy folk with skin like burnished
-      copper and hair that flows like living silver – have long mastered the art of
-      harnessing the raw energy that seethes through this unforgiving landscape, channeling
-      it into a tapestry of lantern-lit alleys, market stalls that overflow with glittering
-      crystals and polished obsidian wares, and imposing ziggurats that pierce the
-      sky like splintered shards of starlight. As night descends, Brindlemark's intricate
-      network of luminescent filaments and glowing, iridescent fungi illuminate the
-      darkness, casting an ethereal glow over this hard-won stronghold of a people
-      who have learned to tame the untamable fury of Aethoria's most unforgiving terrain.
-  description: 'Aethoria lies shrouded in an eternal twilight, as if the very fabric
-    of reality has been torn asunder to reveal a realm where the sun''s warmth is
-    but a distant memory. The continent is a vast expanse of crystalline spires and
-    iridescent forests that stretch towards the horizon like an endless tapestry woven
-    by the gods themselves. The land itself is alive, its ancient pulse resonating
-    through every rock and tree, imbuing all who dwell upon it with a deep connection
-    to the mystical forces that shape this realm.
+  - name: Starweaver's Spire
+    description: Starweaver's Spire pierces the skies of Aethoria like a shard of
+      splintered starlight, its iridescent spires and turrets reflecting hues of auroral
+      blues and sapphire purples that seem to shift with the celestial rhythms of
+      the world. This astral metropolis is said to be woven from the very fabric of
+      reality itself, its streets and buildings grown from a matrix of glittering
+      stardust and crystalline fibers that thrum with an otherworldly energy. As one
+      navigates the city's labyrinthine canyons and vaulted marketplaces, the air
+      vibrates with the whispers of celestial harmonies, while above, the spire's
+      apex disappears into the upper atmosphere as a blazing beacon, its radiance
+      drawing in ships from across the cosmos like moths to a star.
+  description: 'Aethoria is a continent of shimmering auroras and eternal twilight,
+    where the skies are painted with colors that dance like iridescent wings. The
+    landscape itself appears to be crafted by the dreams of ancient gods, with twisted
+    rock formations that resemble crystalline spires and valleys carved into labyrinthine
+    patterns by some long-forgotten hand. Crystal spires pierce the sky at irregular
+    intervals, emitting soft hums that vibrate through the air like a celestial harp.
 
 
-    As one traverses Aethoria''s winding pathways, they will encounter realms both
-    wondrous and foreboding. Towering crystalline cities pierce the sky like shards
-    of splintered glass, their facets reflecting the colors of the aurora borealis
-    as they hum with ancient power. Meanwhile, the Shadowfen, a labyrinthine network
-    of twisted mangroves and blackwater swamps, spreads its dark tendrils across the
-    continent''s heart, whispering tales of forgotten civilizations and long-forgotten
-    sorceries to those brave enough to venture into its depths.
+    Geological upheavals have sculpted Aethoria''s terrain into vast expanses of glittering
+    crystal caverns and iridescent salt flats, where rare minerals are said to hold
+    the secrets of the cosmos. The ground beneath is treacherous, prone to sudden
+    shifts in gravity that send unwary travelers tumbling through wormholes or into
+    inverted gravitational pockets. Aethoria''s unique properties have given rise
+    to a variety of enigmatic flora and fauna: crystalline plants that absorb starlight
+    and store it as luminescent energy; winged creatures with scales that refract
+    the colors of their surroundings; and massive, lumbering beasts whose skin is
+    etched with celestial maps.
 
 
-    The skies above Aethoria are ablaze with celestial bodies that defy mortal comprehension:
-    nebulae that burn like divine beacons, constellations forged from the very essence
-    of magic, and solar winds that howl with a mournful cry as they sweep across the
-    continent. It is said that on certain nights, when the alignment of these celestial
-    bodies is just so, Aethoria''s very fabric is rent asunder, allowing glimpses
-    into realms beyond this world – realms where gods and demons dance to the tune
-    of cosmic forces, their whispers carried on the solar winds like a siren''s call
-    to those who would seek to grasp the secrets hidden within the cosmos.'
+    Aethoria is home to several disparate city-states, each built atop a nexus of
+    ley lines that channel the planet''s mystical energies. These metropolises are
+    bastions of arcane knowledge, where scholars and mages delve into the secrets
+    of Aethoria''s anomalous properties in search of power, wisdom, or simply to keep
+    pace with the ever-changing landscape. As Aethoria continues its slow dance through
+    the cosmos, these city-states must navigate shifting alliances, ancient rivalries,
+    and the unrelenting march of celestial events that reshape the continent''s very
+    fabric.'
 oceans:
-- name: Kyrium's Endless Expanse
-  description: 'Kyrium''s Endless Expanse sprawls across the western horizon like
-    a canvas of liquid silver, its waves caressing the shores with an ethereal melody
-    that has entranced sailors and mystics alike for centuries. The ocean itself is
-    said to be a manifestation of the divine, forged from the tears of the ancient
-    gods as they wept for their mortal creations. As such, Kyrium''s Endless Expanse
-    is home to countless islands, each born from the dreams and imagination of the
-    sea goddess herself.
+- name: Crystalhaven Sea of Lyraea
+  description: 'The Crystalhaven Sea of Lyraea sprawls across the luminous expanse
+    of the Astral Plateau, a gargantuan ocean of iridescent waters that shimmer like
+    stardust under the dual suns of Elyria and Nyx. Towering crystal spires rise from
+    the sea floor, their facets reflecting the colors of the aurora borealis as they
+    pierce the surface with glittering shards of light. Schools of luminescent fish
+    dart through the waves, leaving trails of glittering stardust in their wake.
 
 
-    The waters of Kyrium are not merely a backdrop for the fantastical world above;
-    they are alive with their own unique magic. Bioluminescent blooms illuminate the
-    darkness like starlight, drawing schools of iridescent fish that shimmer in time
-    with the beat of the planet''s celestial rhythms. Kelp forests sway to the rhythm
-    of the tides, their translucent stalks glowing with a soft, otherworldly light
-    as they absorb and store the memories of those who have swum within their depths.
-    The whispers of the deep are said to hold secrets of the past and future, waiting
-    for those brave enough to listen.
+    Wreathed in a halo of soft, ethereal mist, the Crystalhaven Sea is home to a multitude
+    of wondrous sea creatures, from the majestic Skypaws – great winged beasts with
+    iridescent scales that shimmer like opals – to the enigmatic Dreamwhales, colossal
+    leviathans whose haunting songs are said to weave the very fabric of reality.
+    As one navigates the Crystalhaven''s treacherous waters, they may encounter merfolk
+    cities hidden within the crystal spires, or stumble upon ancient ruins guarded
+    by the spectral guardians of the deep.
 
 
-    Beyond its tranquil shores, Kyrium''s Endless Expanse becomes a realm of unforgiving
-    power and unpredictable fury. Maelstroms born from the rage of the sea goddess
-    herself have been known to consume entire fleets, their vortex drawing sailors
-    into the abyss like moths to flame. Yet it is within these maelstroms that the
-    true magic of Kyrium lies – for those who can navigate its depths will discover
-    hidden cities crafted by merfolk and selkies, where ancient knowledge and forgotten
-    lore await the willing adventurer.'
+    Beneath the surface, the Crystalhaven Sea conceals a labyrinthine network of glowing
+    canyons and glittering caves, where crystalline formations resonate with the celestial
+    harmonics of Elyria and Nyx. Those attuned to these vibrations may unlock hidden
+    secrets, tap into ancient magical energies, or even converse with the enigmatic
+    sea-dwelling entities known as the Lyraean Architects – mysterious beings who
+    shape the Crystalhaven''s very essence through a symphony of light, sound, and
+    crystal resonance.'

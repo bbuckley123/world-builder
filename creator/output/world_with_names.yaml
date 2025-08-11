@@ -1,10 +1,10 @@
-name: Tenriethor
-genre: High Fantasy
+name: Nyxoria Primevalis
+genre: Space Fantasy
 continents:
 - name: Aethoria
   regions:
-  - name: Glimmering Spires of Aethoria
+  - name: Aetherswamp
   cities:
-  - name: Brindlemark Village
+  - name: Starweaver's Spire
 oceans:
-- name: Kyrium's Endless Expanse
+- name: Crystalhaven Sea of Lyraea

@@ -1,91 +1,88 @@
-name: Tenriethor
-genre: High Fantasy
+name: Nyxoria Primevalis
+genre: Space Fantasy
 continents:
 - name: Aethoria
   regions:
-  - name: Glimmering Spires of Aethoria
-  - name: Emerald Expanse of Elyria
-  - name: Crystal Caverns of Kyrios
-  - name: Wysteria Windswept Steppes
-  - name: Luminous Mire of Xylonia
-  - name: Gilded Dunes of Zerzura
+  - name: Aetherswamp
+  - name: Crysonian Ice Spires
+  - name: Aqueonia
+  - name: Mirehaven
+  - name: Kyrexi Wastes
+  - name: Starfall Steppes
+  - name: Glimmering Grotto
+  - name: Frostbite Fjords
+  - name: Embermist Mountains
+  - name: Astral Oasis.
   cities:
-  - name: Glimmerhaven
-  - name: Aetherspire Citadel
-  - name: Brindlemark Village
-  - name: Eldrida's Reach
-  - name: Starweaver's Hollow
-- name: Kyrethia
+  - name: Skyhaven
+  - name: Nova Haven
+  - name: Starweaver's Spire
+  - name: Crystal Colony on Zha'thik
+  - name: Luminaria Outpost on the Aurora Plateau
+- name: Kyrialys
   regions:
+  - name: Aetherswamp
   - name: Glimmering Grottos
-  - name: Aethereia Wastes
-  - name: Celestial Spires
-  - name: Luminous Mire
-  - name: Windsong Steppes
-  - name: Skypaw Fells
-  - name: Emberfall Jungle
-  - name: Crystalhaven Tundras
-  - name: Duskwych Swampwalks
-  - name: Starlight Oasis
+  - name: Scorching Miresteppes
+  - name: Starweaver's Canyons
+  - name: Frostbite Fjords
+  - name: Emerald Spine Mountains
+  - name: Astral Oasis
+  - name: Shadowglade Swamps
+  - name: Nebula Nexus Highlands
+  - name: Crystal Colonies Tundra.
   cities:
   - name: Aethereia
+  - name: Starhaven Citadel
+  - name: Luminari's Reach
+  - name: Aurora Spire
+  - name: Nexus of the Celestial Gate
+- name: Xeridia
+  regions:
+  - name: Aetherswamp
+  - name: Crystal Spires of Zha'thik
+  - name: Glimmering Mire of Luminaria
+  - name: Starfall Steppes
+  - name: Frostbite Fjords
+  - name: Celestial Cinderlands
+  - name: Emerald Abyssal Plains
+  - name: Nova Haven's Burning Badlands
+  - name: Dreamcatcher Isles
+  cities:
+  - name: Aethereia's Spire
+  - name: Nova Haven
   - name: Crystalhaven
-  - name: Brindlemark
-  - name: Luminaria
-  - name: Havenstead
-- name: Elyria
+  - name: Glimmerwych
+  - name: Asterion's Gate
+- name: Nexarathia
   regions:
-  - name: Glimmering Spires of Eldrida
-  - name: Luminous Mire of Aethereia
-  - name: The Shattered Isles of Kyrial
-  - name: The Spine of Vorgath
-  - name: The Duskshroud Wastes
-  - name: The Emerald Expanse of Elyria
-  - name: The Starforged Steppes
+  - name: Glimmering Mirelands
+  - name: Starlit Spires of Zha'thik
+  - name: Aetherean Wastes
+  - name: Celestial Covenants of Elyria
+  - name: Shattered Skypillars
   cities:
-  - name: Moonwhisper
-  - name: Eldrador's Reach
-  - name: Starfall Village
-  - name: Crystalhaven
-  - name: Wyrmstone Citadel
-- name: Xylonia
+  - name: Aethereia
+  - name: Crystalhaven Citadel
+  - name: Nova Spire Metropolis
+  - name: Asterion's Refuge
+  - name: Luminaria Colony Outpost
+- name: Zha'thik
   regions:
-  - name: Aethereia's Spine
-  - name: Crystal Scarps
-  - name: Duskwater Coast
-  - name: Emberfall Wastes
-  - name: Glimmergale Forests
-  - name: Luminari Isles
-  - name: Shadowfen Swamps
-  - name: Skypetal Highlands
-  - name: Thistlethorn Steppes
-  - name: Wyrmfire Peaks
+  - name: Gelrashian Glacier Fields
+  - name: Crystal Spires of Elyria
+  - name: Mire of Aethereia's Tears
+  - name: Aurora Plains of Nexarion
+  - name: Cinderfall Wastes
+  - name: Luminous Forests of Zha'thik
+  - name: Shattered Ice Cascades of Valtoria
   cities:
-  - name: Eldrida's Reach
-  - name: Starweaver's Spire
-  - name: Havenstead on the Glimmering Strait
-  - name: Windsong Citadel
-  - name: Crystalhaven by the Luminous Falls
-- name: Valtorin
-  regions:
-  - name: Glimmering Grottos
-  - name: Ethereal Expanse
-  - name: Aethershire Peaks
-  - name: Crystal Spires
-  - name: Mistbound Coastlines
-  - name: Shadowfen Swamps
-  - name: Starweaver's Oasis
-  - name: Frostbark Tundra
-  - name: Emberfall Highlands
-  - name: Luminous Lagoons
-  - name: Dreamscar Mountains
-  cities:
-  - name: Starhaven Village
-  - name: Emeraldhaven City
-  - name: Windsonghamlet
-  - name: Luminaria's Spire
-  - name: Kyrium Citadel
+  - name: Aethereia Starhaven
+  - name: Celestium's Reach
+  - name: Nova Haven
+  - name: Zorvath's Spire
+  - name: Luminaria's Citadel
 oceans:
-- name: Aetherean Abyss
-- name: Luminari Tides
-- name: Kyrium's Endless Expanse
+- name: Aethersurge
+- name: Kyrethian Abyssal Tides
+- name: Crystalhaven Sea of Lyraea

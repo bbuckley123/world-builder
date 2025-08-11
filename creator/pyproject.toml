@@ -39,9 +39,6 @@ torchvision = [{ index = "pytorch-nightly-cpu" }]
 torchaudio  = [{ index = "pytorch-nightly-cpu" }]
 
 [project.scripts]
-worldbuilder = "worldbuilder.world_graph:main"
-continentsbuilder = "worldbuilder.region_graph:main"
-worldfull = "worldbuilder.full_graph:main"
 namebuilder = "worldbuilder.name_creator_graph:main"
 name_chopper = "worldbuilder.name_chopper:main"
 descriptionbuilder = "worldbuilder.description_creator_graph:main"
