@@ -1,6 +1,4 @@
 __init__
-input_data
-package_world
 sandbox
 tests
 world_data

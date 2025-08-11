@@ -7,7 +7,7 @@ import yaml
 
 from worldbuilder.prompt_loader import load_prompt
 from worldbuilder.pipeline_loader import get_stable_diffusion_pipeline
-from worldbuilder.paths import WORLD_YAML
+from worldbuilder.paths import WORLD_YAML, DESCRIPTIONS_YAML
 
 
 # === TypedDicts ===
@@ -51,13 +51,13 @@ class World(TypedDict):
 # === I/O Helpers ===
 
 def load_world_yaml() -> World:
-    with open("world_with_descriptions.yaml", "r", encoding="utf-8") as f:
+    with open(DESCRIPTIONS_YAML, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
-def save_world_yaml(state: World, path: str = "world_with_images.yaml") -> None:
-    with open(path, "w", encoding="utf-8") as f:
+def save_world_yaml(state: World) -> None:
+    with open(WORLD_YAML, "w", encoding="utf-8") as f:
         yaml.dump(state, f, sort_keys=False, allow_unicode=True)
-    print(f"✅ Saved image data to {path}")
+    print(f"✅ Saved image data to {WORLD_YAML}")
 
 
 # === Image Generation ===
@@ -100,9 +100,10 @@ def generate_world_image_prompt(state: World, llm: OllamaLLM) -> dict:
 
 def generate_world_image(state: World) -> dict:
     print("generating world image")
-    path = "world_image.png"
+    path = "output/images/world.png"
+    path_locator = "images/world.png"
     generate_image(state["image_prompt"], path)
-    return {"image_path": path}
+    return {"image_path": path_locator}
 
 
 def generate_continent_images(state: World, llm: OllamaLLM) -> dict:
@@ -110,9 +111,10 @@ def generate_continent_images(state: World, llm: OllamaLLM) -> dict:
     updated = []
     for c in state["continents"]:
         prompt = render_image_prompt(c["description"], "continent", c["name"], llm)
-        path = f"images/continents/{slugify(c['name'])}.png"
+        path = f"output/images/continents/{slugify(c['name'])}.png"
+        path_locator = f"images/continents/{slugify(c['name'])}.png"
         generate_image(prompt, path)
-        updated.append({**c, "image_prompt": prompt, "image_path": path})
+        updated.append({**c, "image_prompt": prompt, "image_path": path_locator})
     return {"continents": updated}
 
 
@@ -123,9 +125,10 @@ def generate_region_images(state: World, llm: OllamaLLM) -> dict:
         updated_regions = []
         for r in continent.get("regions", []):
             prompt = render_image_prompt(r["description"], "region", r["name"], llm)
-            path = f"images/regions/{slugify(r['name'])}.png"
+            path = f"output/images/regions/{slugify(r['name'])}.png"
+            path_locator = f"images/regions/{slugify(r['name'])}.png"
             generate_image(prompt, path)
-            updated_regions.append({**r, "image_prompt": prompt, "image_path": path})
+            updated_regions.append({**r, "image_prompt": prompt, "image_path": path_locator})
         updated_continents.append({**continent, "regions": updated_regions})
     return {"continents": updated_continents}
 
@@ -137,9 +140,10 @@ def generate_city_images(state: World, llm: OllamaLLM) -> dict:
         updated_cities = []
         for city in continent.get("cities", []):
             prompt = render_image_prompt(city["description"], "city", city["name"], llm)
-            path = f"images/cities/{slugify(city['name'])}.png"
+            path = f"output/images/cities/{slugify(city['name'])}.png"
+            path_locator = f"images/cities/{slugify(city['name'])}.png"
             generate_image(prompt, path)
-            updated_cities.append({**city, "image_prompt": prompt, "image_path": path})
+            updated_cities.append({**city, "image_prompt": prompt, "image_path": path_locator})
         updated_continents.append({**continent, "cities": updated_cities})
     return {"continents": updated_continents}
 
@@ -149,9 +153,10 @@ def generate_ocean_images(state: World, llm: OllamaLLM) -> dict:
     updated = []
     for ocean in state["oceans"]:
         prompt = render_image_prompt(ocean["description"], "ocean", ocean["name"], llm)
-        path = f"images/oceans/{slugify(ocean['name'])}.png"
+        path = f"output/images/oceans/{slugify(ocean['name'])}.png"
+        path_locator = f"images/oceans/{slugify(ocean['name'])}.png"
         generate_image(prompt, path)
-        updated.append({**ocean, "image_prompt": prompt, "image_path": path})
+        updated.append({**ocean, "image_prompt": prompt, "image_path": path_locator})
     return {"oceans": updated}
 
 
@@ -164,7 +169,7 @@ def slugify(name: str) -> str:
 # === Finalization Step ===
 
 def finalize_images(state: World) -> World:
-    save_world_yaml(state, "world_with_images.yaml")
+    save_world_yaml(state)
     return state
 
 

@@ -1,0 +1,123 @@
+name: Aethoria Prime
+genre: Space Fantasy
+description: 'Aethoria Prime is a mystical realm of crystalline worlds suspended within
+  the astral expanse, where starlight is woven into sentient energies known as the
+  Luminari. Each world is a vast, faceted crystal that resonates at a unique frequency,
+  imbuing its inhabitants with powers tied to their planet''s essence. The skies are
+  ablaze with auroral displays of iridescent colors, as the Luminari dance across
+  the cosmos, governing the cycles of life and death.
+
+
+  The fabric of space-time on Aethoria Prime is woven from stardust and forgotten
+  memories, giving rise to enclaves of ancient knowledge hidden within nebulae. Celestial
+  vessels known as Star-Spires pierce the void, serving as conduits for interdimensional
+  travel and harboring secrets of the cosmos. As worlds collide or merge in cosmic
+  events, their essences blend, birthing new facets of reality and summoning beings
+  with unfathomable power.
+
+
+  Aethoria Prime is home to diverse factions vying for dominance: the Celestial Architects,
+  master engineers who wield the Luminari to reshape worlds; the Starseekers, nomadic
+  clans attuned to the whispers of the cosmos; and the Kyrexi, enigmatic entities
+  born from the convergence of shattered realities. These forces navigate the intricate
+  web of alliances, rivalries, and ancient prophecies that shape the destiny of Aethoria
+  Prime, where worlds in constant flux offer opportunities for discovery, adventure,
+  and transformation.'
+image_prompt: 'Aethoria Prime: A mystical realm of crystalline worlds suspended in
+  the astral expanse, where sentient starlight energies (Luminari) dance across iridescent
+  skies, governing life and death amidst colliding worlds and unfolding cosmic events.'
+image_path: images/world.png
+continents:
+- name: Aethoria
+  regions:
+  - name: Aetherspire Mountains
+    description: Aetherspire Mountains stretch across the northernmost reaches of
+      the Aethoria continent like a shattered canvas of crystal spires and smoldering
+      obsidian peaks, their tortured facades glowing with an ethereal essence that
+      echoes the whispers of ancient stars. Towering crystalline formations called
+      "Skyborn Pillars" pierce the atmosphere, their facets reflecting a kaleidoscope
+      of colors as the Aethorian windstorms carve through the upper atmosphere, imbuing
+      the mountains' rugged terrain with an otherworldly luminescence. The mountains
+      are home to the enigmatic Luminari, beings forged from stardust and crystal,
+      who weave their existence into the very fabric of the Aetherspires' mystical
+      energies, creating localized distortions in space-time that allow for the manipulation
+      of gravity, time, and reality itself.
+    image_prompt: 'Aetherspire Mountains: towering crystalline spires and smoldering
+      obsidian peaks with ethereal essence glowing like ancient stars amidst the continent''s
+      northernmost reaches, home to enigmatic Luminari beings who weave reality into
+      mystical energies.'
+    image_path: images/regions/aetherspire_mountains.png
+  cities:
+  - name: Nebula's Spire
+    description: Nebula's Spire pierces the sky like a shard of splintered starlight,
+      its iridescent spires dancing with auroral energy as they merge with the perpetual
+      twilight shroud that envelops the Aethorian continent's Crystal Spires province.
+      This city-state is a tapestry woven from silver filaments and crystal lace,
+      its architecture an organic blend of crystalline formations and precision-crafted
+      spire-structures that reflect the celestial ballet above. As one approaches
+      Nebula's Spire via the grav-lifts or sky-gondolas, the air thickens with the
+      scent of stardust and ozone, hinting at the city's symbiotic relationship with
+      the Aethorian ley lines – mystical conduits of energy that course through the
+      planet's crust like veins in a celestial body.
+    image_prompt: A city named Nebula's Spire with iridescent spires dancing in auroral
+      energy amidst perpetual twilight, woven from silver filaments and crystal lace,
+      reflecting the celestial ballet above Aethorian continent's Crystal Spires province.
+    image_path: images/cities/nebula's_spire.png
+  description: 'Aethoria sprawls across the cosmos like a celestial tapestry, its
+    continents and oceans born from the fabric of space-time itself. Towering crystal
+    spires pierce the sky on the continent of Elyria, where iridescent forests shimmer
+    with an otherworldly glow. Here, winged humanoids known as the Luminari weave
+    their magic amidst the verdant canopy, communing with ancient beings of pure energy
+    that slumber within the planet''s core.
+
+
+    In stark contrast, the smoldering wasteland of Kraelion scars Aethoria''s southern
+    hemisphere, where volcanic uprisings have reshaped the terrain into a labyrinthine
+    expanse of obsidian canyons and infernal badlands. This unforgiving realm is home
+    to the Kraelion Duskmancers, practitioners of dark arts who manipulate fire and
+    shadow to survive in this harsh environment. Their cities burrow deep beneath
+    the blackened rock, hidden from the world by labyrinthine tunnels and veils of
+    noxious fumes.
+
+
+    Beyond Elyria''s crystal spires and Kraelion''s burning deserts lies the Astral
+    Steppes, an endless expanse of glittering starlight that shimmers like the surface
+    of a celestial lake. Here, nomadic tribes of astral-worshipers roam the skies
+    in vessels crafted from living stardust, seeking communion with the divine entities
+    that whisper secrets on the solar winds. Theirs is a realm of dreamlike beauty,
+    where the very fabric of reality seems to bend and writhe like a living thing,
+    awaiting those brave enough to ride its celestial tides.'
+  image_prompt: 'Aethoria: a sprawling continent born from space-time, featuring iridescent
+    forests, crystal spires, smoldering wastelands, and endless starlit steppes, inhabited
+    by winged humanoids, dark mages, and astral-worshiping nomads.'
+  image_path: images/continents/aethoria.png
+oceans:
+- name: Aetherswells
+  description: 'Aetherswells sprawls across the cosmos like an astral tapestry, its
+    luminous waters shimmering with an ethereal glow that permeates the surrounding
+    space. Crystal spires jut from the seafloor, refracting and amplifying the celestial
+    light into a kaleidoscope of colors that dance across the waves. The ocean''s
+    surface is home to majestic Astral Leviathans, colossal beings of iridescent energy
+    that breach the water''s surface with regal indifference.
+
+
+    As one delves deeper into Aetherswells, the darkness yields to an eerie luminescence
+    emanating from bioluminescent flora and fauna that adapt to the ever-changing
+    pressures. Schools of Starwhisper fish dart past glowing coral formations, their
+    scales reflecting the celestial harmonics that govern the ocean''s rhythms. Here,
+    ancient secrets slumber within the whispers of the Aetherswells'' sentinel creatures:
+    the Starseekers, enigmatic beings attuned to the cosmos and whispering mysteries
+    to those who would listen.
+
+
+    Aetherswells is bound by a mystical current known as the Song of the Spheres,
+    an otherworldly vibration that orchestrates the harmonies of creation itself.
+    Those attuned to this resonance – be they spacefaring seers or starstruck mystics
+    – can navigate Aetherswells'' labyrinthine pathways and eavesdrop on the cosmic
+    symphony. The ocean''s secrets are hidden within its melodies, waiting for those
+    brave enough to listen and decipher the language of the stars.'
+  image_prompt: A shimmering ocean named Aetherswells with luminous waters, crystal
+    spires, and Astral Leviathans breaching the surface amidst iridescent energy,
+    bioluminescent flora and fauna, and Starseekers whispering ancient secrets to
+    those attuned to the Song of the Spheres.
+  image_path: images/oceans/aetherswells.png

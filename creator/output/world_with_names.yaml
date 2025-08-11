@@ -1,0 +1,10 @@
+name: Tenriethor
+genre: High Fantasy
+continents:
+- name: Aethoria
+  regions:
+  - name: Glimmering Spires of Aethoria
+  cities:
+  - name: Brindlemark Village
+oceans:
+- name: Kyrium's Endless Expanse

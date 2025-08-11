@@ -21,7 +21,7 @@ type WorldSummary = {
   name: string;
   genre: string;
   description: string;
-  preview: string; // e.g., "worlds/elyria/images/world.png"
+  preview: string; // e.g., "elyria/images/world.png"
 };
 
 export const WorldListPage: React.FC = () => {
@@ -69,7 +69,7 @@ export const WorldListPage: React.FC = () => {
                     <CardMedia
                       component="img"
                       height="180"
-                      image={`${world.preview}`} // Static asset path
+                      image={`worlds/${world.preview}`} // Static asset path
                       alt={world.name}
                       sx={{ objectFit: "cover" }}
                     />

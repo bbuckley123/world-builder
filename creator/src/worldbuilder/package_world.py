@@ -2,37 +2,35 @@ import os
 import yaml
 import json
 import shutil
-from worldbuilder.paths import WORLD_YAML
+from worldbuilder.paths import WORLD_YAML, IMAGES_BASE_DIR, EXPORT_DIR
 
-WORLD_ROOT = "worlds"
 
 def slugify(name: str) -> str:
     return name.lower().replace(" ", "_")
 
 def package_current_world():
-    # Load current YAML
+    # Load recently generated world
     with open(WORLD_YAML, "r", encoding="utf-8") as f:
         state = yaml.safe_load(f)
 
     world_id = slugify(state["name"])
-    world_dir = os.path.join(WORLD_ROOT, world_id)
+    world_dir = EXPORT_DIR / world_id
     os.makedirs(world_dir, exist_ok=True)
 
     # Copy world.yaml
-    packaged_yaml = os.path.join(world_dir, "world.yaml")
+    packaged_yaml = world_dir / "world.yaml"
     shutil.copy(WORLD_YAML, packaged_yaml)
 
-    # Copy images (world_image.png and subfolders)
-    image_src_root = os.path.dirname(WORLD_YAML)  # same directory as YAML
-    image_dst_root = os.path.join(world_dir, "images")
+    image_dst_root = world_dir / "images"
     os.makedirs(image_dst_root, exist_ok=True)
 
     # Copy the world image
-    if os.path.exists("world_image.png"):
-        shutil.copy("world_image.png", os.path.join(image_dst_root, "world.png"))
+    generated_world_image = IMAGES_BASE_DIR / "world.png"
+    if os.path.exists(generated_world_image):
+        shutil.copy(generated_world_image, os.path.join(image_dst_root, "world.png"))
 
     # Copy all sub-image directories (continents, regions, cities, etc.)
-    for folder in ["images/continents", "images/regions", "images/cities", "images/oceans"]:
+    for folder in [IMAGES_BASE_DIR / "continents", IMAGES_BASE_DIR / "regions", IMAGES_BASE_DIR / "cities", IMAGES_BASE_DIR / "oceans"]:
         if os.path.exists(folder):
             shutil.copytree(folder, os.path.join(image_dst_root, os.path.basename(folder)), dirs_exist_ok=True)
 
@@ -40,7 +38,7 @@ def package_current_world():
     update_world_index(state, world_id)
 
 def update_world_index(state, world_id):
-    index_file = os.path.join(WORLD_ROOT, "worlds.json")
+    index_file = os.path.join(EXPORT_DIR, "worlds.json")
     if os.path.exists(index_file):
         with open(index_file, "r") as f:
             worlds = json.load(f)

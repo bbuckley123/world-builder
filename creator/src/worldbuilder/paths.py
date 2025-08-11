@@ -1,14 +1,19 @@
 from pathlib import Path
 
 # Project root is one level up from /src/worldbuilder
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 SRC_DIR = PROJECT_ROOT / "src"
 OUTPUT_DIR = PROJECT_ROOT / "output"
+EXPORT_DIR = PROJECT_ROOT / "worlds"
 DATA_DIR = PROJECT_ROOT / "world_data"
-PROMPTS_PATH = SRC_DIR / "prompts"
+PROMPTS_PATH = SRC_DIR / "worldbuilder" / "prompts"
 
 # Common files
+NAMES_RAW_YAML = OUTPUT_DIR / "world_with_names_raw.yaml"
+NAMES_YAML = OUTPUT_DIR / "world_with_names.yaml"
+DESCRIPTIONS_YAML = OUTPUT_DIR / "world_with_descriptions.yaml"
 WORLD_YAML = OUTPUT_DIR / "world.yaml"
+IMAGES_BASE_DIR = OUTPUT_DIR / "images"
 CONTINENTS_YAML = DATA_DIR / "continents.yaml"
 OCEANS_YAML = DATA_DIR / "oceans.yaml"
 WORLD_IMG = DATA_DIR / "world.png"

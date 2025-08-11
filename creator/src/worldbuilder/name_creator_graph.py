@@ -4,8 +4,7 @@ from typing import TypedDict
 import yaml
 import random
 from pprint import pprint
-from worldbuilder.image_generator import generate_image
-from worldbuilder.paths import WORLD_IMG, WORLD_YAML
+from worldbuilder.paths import NAMES_RAW_YAML
 from worldbuilder.prompt_loader import load_prompt
 
 class City(TypedDict):
@@ -41,7 +40,7 @@ def generate_entity_names(
     return [item.strip() for item in result.split(",")]
 
 def write_world_yaml(state: World) -> None:
-    yaml_file = WORLD_YAML
+    yaml_file = NAMES_RAW_YAML
     with open(yaml_file, "w", encoding="utf-8") as f:
         yaml.dump(
             state,

@@ -1,0 +1,91 @@
+name: Tenriethor
+genre: High Fantasy
+continents:
+- name: Aethoria
+  regions:
+  - name: Glimmering Spires of Aethoria
+  - name: Emerald Expanse of Elyria
+  - name: Crystal Caverns of Kyrios
+  - name: Wysteria Windswept Steppes
+  - name: Luminous Mire of Xylonia
+  - name: Gilded Dunes of Zerzura
+  cities:
+  - name: Glimmerhaven
+  - name: Aetherspire Citadel
+  - name: Brindlemark Village
+  - name: Eldrida's Reach
+  - name: Starweaver's Hollow
+- name: Kyrethia
+  regions:
+  - name: Glimmering Grottos
+  - name: Aethereia Wastes
+  - name: Celestial Spires
+  - name: Luminous Mire
+  - name: Windsong Steppes
+  - name: Skypaw Fells
+  - name: Emberfall Jungle
+  - name: Crystalhaven Tundras
+  - name: Duskwych Swampwalks
+  - name: Starlight Oasis
+  cities:
+  - name: Aethereia
+  - name: Crystalhaven
+  - name: Brindlemark
+  - name: Luminaria
+  - name: Havenstead
+- name: Elyria
+  regions:
+  - name: Glimmering Spires of Eldrida
+  - name: Luminous Mire of Aethereia
+  - name: The Shattered Isles of Kyrial
+  - name: The Spine of Vorgath
+  - name: The Duskshroud Wastes
+  - name: The Emerald Expanse of Elyria
+  - name: The Starforged Steppes
+  cities:
+  - name: Moonwhisper
+  - name: Eldrador's Reach
+  - name: Starfall Village
+  - name: Crystalhaven
+  - name: Wyrmstone Citadel
+- name: Xylonia
+  regions:
+  - name: Aethereia's Spine
+  - name: Crystal Scarps
+  - name: Duskwater Coast
+  - name: Emberfall Wastes
+  - name: Glimmergale Forests
+  - name: Luminari Isles
+  - name: Shadowfen Swamps
+  - name: Skypetal Highlands
+  - name: Thistlethorn Steppes
+  - name: Wyrmfire Peaks
+  cities:
+  - name: Eldrida's Reach
+  - name: Starweaver's Spire
+  - name: Havenstead on the Glimmering Strait
+  - name: Windsong Citadel
+  - name: Crystalhaven by the Luminous Falls
+- name: Valtorin
+  regions:
+  - name: Glimmering Grottos
+  - name: Ethereal Expanse
+  - name: Aethershire Peaks
+  - name: Crystal Spires
+  - name: Mistbound Coastlines
+  - name: Shadowfen Swamps
+  - name: Starweaver's Oasis
+  - name: Frostbark Tundra
+  - name: Emberfall Highlands
+  - name: Luminous Lagoons
+  - name: Dreamscar Mountains
+  cities:
+  - name: Starhaven Village
+  - name: Emeraldhaven City
+  - name: Windsonghamlet
+  - name: Luminaria's Spire
+  - name: Kyrium Citadel
+oceans:
+- name: Aetherean Abyss
+- name: Luminari Tides
+- name: Kyrium's Endless Expanse

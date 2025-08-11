@@ -2,7 +2,7 @@ from langgraph.graph import StateGraph, END
 from langchain_ollama import OllamaLLM
 from typing import TypedDict
 import yaml
-from worldbuilder.paths import WORLD_YAML
+from worldbuilder.paths import NAMES_YAML, DESCRIPTIONS_YAML
 from worldbuilder.prompt_loader import load_prompt
 from copy import deepcopy
 
@@ -38,13 +38,13 @@ class World(TypedDict):
 # === Load / Save YAML ===
 
 def load_world_yaml() -> World:
-    with open(WORLD_YAML, "r", encoding="utf-8") as f:
+    with open(NAMES_YAML, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
-def save_world_yaml(state: World, path: str = "world_with_descriptions.yaml") -> None:
-    with open(path, "w", encoding="utf-8") as f:
+def save_world_yaml(state: World) -> None:
+    with open(DESCRIPTIONS_YAML, "w", encoding="utf-8") as f:
         yaml.dump(state, f, sort_keys=False, allow_unicode=True)
-    print(f"✅ Saved updated world with descriptions to {WORLD_YAML}")
+    print(f"✅ Saved updated world with descriptions to {DESCRIPTIONS_YAML}")
 
 
 # === Description Generators ===

@@ -1,0 +1,108 @@
+name: Tenriethor
+genre: High Fantasy
+description: 'Tenriethor is an archipelago of crystalline islands suspended within
+  the celestial expanse of the Astral Sea, where iridescent clouds perpetually congregate
+  to weave auroral tapestries across the sky. The islands themselves are manifestations
+  of sentient crystal, their faceted surfaces reflecting the accumulated memories
+  and emotions of eons past. Each island is a distinct entity with its own unique
+  resonance, influencing the thoughts and actions of those who dwell upon it – whether
+  mortal or ancient being.
+
+
+  As one navigates the skies between the islands, they''ll discover that the Astral
+  Sea is home to an array of fantastical creatures: skywhales with ethereal song harmonies,
+  wispy cloudstriders that can traverse the expanse on currents of air, and star-tailed
+  serpents that ride solar flares like celestial chariots. These denizens of the Astral
+  Sea are not just simple beasts; they hold secrets and mysteries that only reveal
+  themselves to those attuned to the harmonic frequencies of Tenriethor.
+
+
+  Beneath the crystal spires and wispy clouds, ancient ruins whisper tales of a lost
+  civilization – the Elder Architects who crafted the very fabric of reality. Their
+  knowledge is encoded within the crystalline matrix, waiting for brave adventurers
+  to decipher the hidden patterns and unlock the secrets of Tenriethor''s creation.
+  The whispers of the past are ever-shifting, as if the land itself remembers events
+  long forgotten by mortal minds, hinting at a deeper truth: that the very fabric
+  of reality is woven from the dreams of the celestial architects.'
+continents:
+- name: Aethoria
+  regions:
+  - name: Glimmering Spires of Aethoria
+    description: Glimmering Spires of Aethoria rise like shards of splintered starlight
+      from the heart of the continent, a labyrinthine metropolis of crystalline spires
+      that pierce the sky and seem to defy gravity's gentle grasp. Delicate filigree
+      bridges weave between the towering structures, each one etched with ancient
+      runes that glow softly in hues of sapphire, amethyst, and rose, casting a kaleidoscope
+      of colors across the city's streets and canals. As night falls, the Spires erupt
+      into a dazzling display of luminescence, as if the very essence of the stars
+      had been distilled within their crystalline facades, bathing Aethoria in an
+      ethereal light that beckons travelers to explore the wonders hidden within its
+      glittering heart.
+  cities:
+  - name: Brindlemark Village
+    description: Perched atop a series of jagged, obsidian-hued spires that thrust
+      from the twisted black rock known as the Spine of Aethoria, Brindlemark Village
+      clings to existence like a delicate gossamer web clinging to the razor's edge
+      of a wind-whipped precipice. Its inhabitants – sturdy folk with skin like burnished
+      copper and hair that flows like living silver – have long mastered the art of
+      harnessing the raw energy that seethes through this unforgiving landscape, channeling
+      it into a tapestry of lantern-lit alleys, market stalls that overflow with glittering
+      crystals and polished obsidian wares, and imposing ziggurats that pierce the
+      sky like splintered shards of starlight. As night descends, Brindlemark's intricate
+      network of luminescent filaments and glowing, iridescent fungi illuminate the
+      darkness, casting an ethereal glow over this hard-won stronghold of a people
+      who have learned to tame the untamable fury of Aethoria's most unforgiving terrain.
+  description: 'Aethoria lies shrouded in an eternal twilight, as if the very fabric
+    of reality has been torn asunder to reveal a realm where the sun''s warmth is
+    but a distant memory. The continent is a vast expanse of crystalline spires and
+    iridescent forests that stretch towards the horizon like an endless tapestry woven
+    by the gods themselves. The land itself is alive, its ancient pulse resonating
+    through every rock and tree, imbuing all who dwell upon it with a deep connection
+    to the mystical forces that shape this realm.
+
+
+    As one traverses Aethoria''s winding pathways, they will encounter realms both
+    wondrous and foreboding. Towering crystalline cities pierce the sky like shards
+    of splintered glass, their facets reflecting the colors of the aurora borealis
+    as they hum with ancient power. Meanwhile, the Shadowfen, a labyrinthine network
+    of twisted mangroves and blackwater swamps, spreads its dark tendrils across the
+    continent''s heart, whispering tales of forgotten civilizations and long-forgotten
+    sorceries to those brave enough to venture into its depths.
+
+
+    The skies above Aethoria are ablaze with celestial bodies that defy mortal comprehension:
+    nebulae that burn like divine beacons, constellations forged from the very essence
+    of magic, and solar winds that howl with a mournful cry as they sweep across the
+    continent. It is said that on certain nights, when the alignment of these celestial
+    bodies is just so, Aethoria''s very fabric is rent asunder, allowing glimpses
+    into realms beyond this world – realms where gods and demons dance to the tune
+    of cosmic forces, their whispers carried on the solar winds like a siren''s call
+    to those who would seek to grasp the secrets hidden within the cosmos.'
+oceans:
+- name: Kyrium's Endless Expanse
+  description: 'Kyrium''s Endless Expanse sprawls across the western horizon like
+    a canvas of liquid silver, its waves caressing the shores with an ethereal melody
+    that has entranced sailors and mystics alike for centuries. The ocean itself is
+    said to be a manifestation of the divine, forged from the tears of the ancient
+    gods as they wept for their mortal creations. As such, Kyrium''s Endless Expanse
+    is home to countless islands, each born from the dreams and imagination of the
+    sea goddess herself.
+
+
+    The waters of Kyrium are not merely a backdrop for the fantastical world above;
+    they are alive with their own unique magic. Bioluminescent blooms illuminate the
+    darkness like starlight, drawing schools of iridescent fish that shimmer in time
+    with the beat of the planet''s celestial rhythms. Kelp forests sway to the rhythm
+    of the tides, their translucent stalks glowing with a soft, otherworldly light
+    as they absorb and store the memories of those who have swum within their depths.
+    The whispers of the deep are said to hold secrets of the past and future, waiting
+    for those brave enough to listen.
+
+
+    Beyond its tranquil shores, Kyrium''s Endless Expanse becomes a realm of unforgiving
+    power and unpredictable fury. Maelstroms born from the rage of the sea goddess
+    herself have been known to consume entire fleets, their vortex drawing sailors
+    into the abyss like moths to flame. Yet it is within these maelstroms that the
+    true magic of Kyrium lies – for those who can navigate its depths will discover
+    hidden cities crafted by merfolk and selkies, where ancient knowledge and forgotten
+    lore await the willing adventurer.'

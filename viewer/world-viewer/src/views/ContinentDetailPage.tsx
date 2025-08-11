@@ -129,7 +129,7 @@ export const ContinentDetailPage: React.FC = () => {
         childrenItems={[]}
         breadcrumbLinks={[
           { label: "Worlds", href: "/" },
-          { label: worldId!, href: `/world/${worldId}` },
+          { label: worldId!, href: `/worlds/${worldId}` },
           { label: continent.name }, // current page
         ]}
       />

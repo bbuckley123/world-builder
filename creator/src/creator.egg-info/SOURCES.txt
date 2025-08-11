@@ -1,7 +1,6 @@
 README.md
 pyproject.toml
 src/__init__.py
-src/package_world.py
 src/creator.egg-info/PKG-INFO
 src/creator.egg-info/SOURCES.txt
 src/creator.egg-info/dependency_links.txt
@@ -25,7 +24,9 @@ src/worldbuilder/image_generator_graph.py
 src/worldbuilder/langgraph_cities_environments_creator.py
 src/worldbuilder/langgraph_continents_oceans.py
 src/worldbuilder/langgraph_world_creator.py
+src/worldbuilder/name_chopper.py
 src/worldbuilder/name_creator_graph.py
+src/worldbuilder/package_world.py
 src/worldbuilder/paths.py
 src/worldbuilder/pipeline_loader.py
 src/worldbuilder/prompt_loader.py

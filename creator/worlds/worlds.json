@@ -5,5 +5,26 @@
     "genre": "Futuristic",
     "description": "",
     "preview": "nyxoria-iv/images/world.png"
+  },
+  {
+    "id": "aethoria_prime",
+    "name": "Aethoria Prime",
+    "genre": "Space Fantasy",
+    "description": "Aethoria Prime is a mystical realm of crystalline worlds suspended within the astral expanse, where starlight is woven into sentient energies known as the Luminari. Each world is a vast, faceted crystal that resonates at a unique frequency, imbuing its inhabitants with powers tied to their planet's essence. The skies are ablaze with auroral displays of iridescent colors, as the Luminari dance across the cosmos, governing the cycles of life and death.\n\nThe fabric of space-time on Aethoria Prime is woven from stardust and forgotten memories, giving rise to enclaves of ancient knowledge hidden within nebulae. Celestial vessels known as Star-Spires pierce the void, serving as conduits for interdimensional travel and harboring secrets of the cosmos. As worlds collide or merge in cosmic events, their essences blend, birthing new facets of reality and summoning beings with unfathomable power.\n\nAethoria Prime is home to diverse factions vying for dominance: the Celestial Architects, master engineers who wield the Luminari to reshape worlds; the Starseekers, nomadic clans attuned to the whispers of the cosmos; and the Kyrexi, enigmatic entities born from the convergence of shattered realities. These forces navigate the intricate web of alliances, rivalries, and ancient prophecies that shape the destiny of Aethoria Prime, where worlds in constant flux offer opportunities for discovery, adventure, and transformation.",
+    "preview": "aethoria_prime/images/world.png"
+  },
+  {
+    "id": "elyndorinthalis",
+    "name": "Elyndorinthalis",
+    "genre": "High Fantasy",
+    "description": "Elyndorinthalis sprawls across the Celestial Plateaus, a vast expanse of iridescent crystals that pierce the sky like shards of rainbow-hued glass. The land itself is alive, its crystalline core throbbing with an otherworldly energy that sustains the delicate balance of nature. Towering Aether Trees, their bark infused with glittering silver leaves, stretch towards the heavens as sentinels guarding the realm's secrets. Amidst this breathtaking tapestry, shimmering waterfalls cascade from crystal canyons, imbuing the air with an essence that fosters dreams and prophecy.\n\nBeyond the Plateaus' crystalline heart lies the Ethereal Wastes, a boundless expanse of swirling mists and shadowy tendrils that writhe like living darkness. This forsaken realm is home to ancient, malevolent beings known as the Shattered Ones, their fragmented forms a testament to the catastrophic event known only as \"The Great Dissonance.\" Their presence warps reality, birthing aberrant creatures and distorted landscapes that defy comprehension. Those who dare traverse this treacherous terrain risk succumbing to the madness-inducing whispers of the Wastes.\n\nElyndorinthalis' sky is a canvas of perpetual dawn, as if the world has forever suspended itself at the cusp of a new day. Starlight weaves an ethereal glow across the Celestial Plateaus, casting an otherworldly radiance upon the landscape. Ancient artifacts whisper secrets to the wind, and the whispers are said to be heard by those attuned to the land's mystical frequency. In Elyndorinthalis, heroes will find themselves bound to the whims of this enigmatic world, their destinies entwined with the unfolding tapestry of celestial politics, ancient prophecies, and forgotten lore.",
+    "preview": "elyndorinthalis/images/world.png"
+  },
+  {
+    "id": "tenriethor",
+    "name": "Tenriethor",
+    "genre": "High Fantasy",
+    "description": "Tenriethor is an archipelago of crystalline islands suspended within the celestial expanse of the Astral Sea, where iridescent clouds perpetually congregate to weave auroral tapestries across the sky. The islands themselves are manifestations of sentient crystal, their faceted surfaces reflecting the accumulated memories and emotions of eons past. Each island is a distinct entity with its own unique resonance, influencing the thoughts and actions of those who dwell upon it \u2013 whether mortal or ancient being.\n\nAs one navigates the skies between the islands, they'll discover that the Astral Sea is home to an array of fantastical creatures: skywhales with ethereal song harmonies, wispy cloudstriders that can traverse the expanse on currents of air, and star-tailed serpents that ride solar flares like celestial chariots. These denizens of the Astral Sea are not just simple beasts; they hold secrets and mysteries that only reveal themselves to those attuned to the harmonic frequencies of Tenriethor.\n\nBeneath the crystal spires and wispy clouds, ancient ruins whisper tales of a lost civilization \u2013 the Elder Architects who crafted the very fabric of reality. Their knowledge is encoded within the crystalline matrix, waiting for brave adventurers to decipher the hidden patterns and unlock the secrets of Tenriethor's creation. The whispers of the past are ever-shifting, as if the land itself remembers events long forgotten by mortal minds, hinting at a deeper truth: that the very fabric of reality is woven from the dreams of the celestial architects.",
+    "preview": "tenriethor/images/world.png"
   }
 ]
