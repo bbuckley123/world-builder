@@ -1,0 +1,244 @@
+name: Nyxoria Prime
+genre: Space Fantasy
+description: 'Nyxoria Prime is a realm of perpetual twilight, where the skies are
+  painted with hues of sapphire and amethyst, and the stars twinkle like diamonds
+  scattered across the velvet expanse. The world itself is a sprawling, iridescent
+  crystal sphere, its surface etched with labyrinthine networks of glittering silver
+  filaments that pulse with an otherworldly energy. Towering crystalline spires pierce
+  the sky, their facets reflecting the kaleidoscope of colors above, while beneath
+  the surface, ancient ley lines hum with mystical power.
+
+
+  Geography and climate on Nyxoria Prime are shaped by the planet''s dual moons, Aethereia
+  and Umbra, which exert a gravitational pull that stirs the atmosphere into dynamic,
+  swirling patterns. Windswept storm systems called "Aetherstorms" can whip across
+  continents in hours, leaving trails of glittering, frozen crystals in their wake.
+  The landscape itself is alive, with vast fungal forests that writhe like living
+  things, and crystal caverns that resonate with the planet''s resonant frequency.
+  Waterfalls cascade from the surface into shimmering, crystalline lakes, while geysers
+  spew forth iridescent mists that carry the whispers of ancient secrets.
+
+
+  Inhabitants of Nyxoria Prime are a diverse array of beings, each attuned to the
+  world''s unique resonance: sky-dwelling avians with wings like stained glass; humanoid
+  crystal colonists who tap into the ley lines to fuel their technology; and shape-shifting,
+  wind-spirits that ride the Aetherstorms as messengers between realms. Nyxoria Prime
+  is a realm of wonder, where magic and science blend in ways both fantastical and
+  unpredictable, and the very fabric of reality is woven from the threads of crystal
+  and starlight.'
+image_prompt: A world called Nyxoria Prime, a glittering iridescent crystal sphere
+  under perpetual twilight skies with sapphire and amethyst hues, dual moons Aethereia
+  and Umbra, and inhabitants of diverse magical beings attuned to its unique resonance.
+image_path: images/world.png
+continents:
+- name: Nova Havenia
+  regions:
+  - name: Cryospherian Steppes
+    description: The Cryospherian Steppes sprawl across the northernmost reaches of
+      Nova Havenia's vast continent, where crystalline ice formations pierce the sky
+      like shards of splintered starlight and glaciers glide across the horizon like
+      behemoths awakened from ancient slumber. Frosty auroras dance across the polar
+      skies, casting an ethereal glow upon the iridescent grasses that cling to life
+      beneath the wind-battered steppes. Towering crystal spires – ancient formations
+      attuned to the planet's resonant frequencies – stand sentinel along the horizon,
+      their facets etched with cryptic runes that shimmer like stardust in the flickering
+      light of auroral curtains. The air is alive with the whispers of forgotten civilizations
+      and the haunting melodies of cryospheric songweavers, who harness the Steppes'
+      mystical energies to weave potent sonic spells that entwine the land's very
+      essence.
+    image_prompt: 'Cryospherian Steppes: sprawling ice formations pierce the sky,
+      glaciers glide across the horizon, frosty auroras dance above iridescent grasses,
+      and crystal spires with cryptic runes stand sentinel amidst whispers of forgotten
+      civilizations and cryospheric songweavers'' melodies.'
+    image_path: images/regions/cryospherian_steppes.png
+  - name: Kyrium Frostshelf
+    description: Kyrium Frostshelf is a vast, crystalline tundra that stretches across
+      the southern edge of Nova Havenia's frozen continent, where the auroral skies
+      dance with spectral lights that seem to pulse in harmony with the icy landscape
+      below. Towering ice spires, grown from millions of years of cryovolcanic activity,
+      pierce the horizon like shards of splintered moonlight, while glittering filaments
+      of frost-draped crystal lattice weave together to form vast, shimmering tapestries
+      that refract and reflect the light of the twin suns. Here, the winds howl with
+      a mournful, ethereal music as they sweep across the Frostshelf's crystal expanse,
+      carrying secrets from the depths of the frozen crust where ancient, slumbering
+      beings known as the Kyrium Watchers lie hidden, their whispers echoing through
+      the crystalline formations like an unseen choir.
+    image_prompt: A vast crystalline tundra under auroral skies where towering ice
+      spires pierce the horizon amidst glittering frost-draped crystal lattice, howling
+      winds whisper secrets of ancient Kyrium Watchers hidden in the frozen crust.
+    image_path: images/regions/kyrium_frostshelf.png
+  cities:
+  - name: Nova Haven
+    description: Nova Haven sprawls across the crescent-shaped bay of Luminaria, its
+      iridescent spires and domes reflecting hues of sapphire and amethyst as the
+      dual suns set over the horizon. This cosmopolitan metropolis is a nexus of intergalactic
+      commerce and mysticism, where ancient skyships dock alongside gleaming spacecraft
+      from distant worlds, their cargo holds overflowing with exotic energies and
+      artifacts. Towering crystal formations, infused with the essence of fallen stars,
+      support the city's upper districts, while lower neighborhoods are woven from
+      a latticework of glowing silver filaments that pulse with the rhythmic heartbeat
+      of Nova Haven's energetic ley lines. As night falls, the city comes alive with
+      luminescent market stalls and star-singing bards, drawing visitors and locals
+      alike into a maelstrom of wonder and discovery.
+    image_prompt: Nova Haven sprawls across Luminaria bay, its iridescent spires reflecting
+      sapphire and amethyst hues as dual suns set over the horizon amidst towering
+      crystal formations and glowing silver filaments supporting intergalactic commerce
+      and mysticism.
+    image_path: images/cities/nova_haven.png
+  description: 'Nova Havenia sprawls across the cosmos like a tapestry of iridescent
+    hues, its landscape a mesmerizing dance of crystalline spires, shimmering auroras,
+    and radiant energies that infuse the very air with an otherworldly essence. This
+    celestial continent is forged from a matrix of glittering starstone, a rare and
+    ancient mineral that imbues its native inhabitants with magical abilities attuned
+    to the resonant frequencies of the cosmos. As a result, the denizens of Nova Havenia
+    have evolved to harness and wield the raw power of the stars, weaving their lives
+    into an intricate ballet of astral sorcery and technological wizardry.
+
+
+    Geological upheavals have sculpted Nova Havenia''s terrain into a series of shimmering
+    archipelagos, each one a distinct realm with its own unique characteristics. The
+    Spires of Eldrida pierce the sky like shards of splintered moonlight, while the
+    Luminous Wastes shimmer with an ethereal glow that attracts dreamers and treasure
+    hunters from across the galaxy. Meanwhile, the crystalline Cities of Aethoria
+    hum with the vibrational resonance of a thousand celestial harmonics, their inhabitants
+    masters of acoustic magic who can coax entire galaxies into existence through
+    the subtle art of soundcraft.
+
+
+    As a hub of intergalactic commerce and magical innovation, Nova Havenia attracts
+    settlers from every corner of the cosmos. These cosmopolitan adventurers come
+    to seek fortune in the lucrative trade of rare starstone, to unlock the secrets
+    of Aethoria''s ancient acoustic lore, or simply to bask in the radiant energy
+    that permeates this mystical realm. However, not all newcomers arrive with pure
+    intentions: nefarious factions and enigmatic organizations lurk in the shadows,
+    waiting to exploit Nova Havenia''s unique energies for their own sinister purposes
+    – and it is here, amidst the starry splendor of this celestial continent, that
+    heroes are forged and legends born.'
+  image_prompt: A celestial continent named Nova Havenia, sprawling with iridescent
+    landscapes of crystalline spires, shimmering auroras, and radiant energies, forged
+    from glittering starstone that imbues its inhabitants with magical abilities attuned
+    to the cosmos.
+  image_path: images/continents/nova_havenia.png
+- name: Aethoria
+  regions:
+  - name: Crystal Caves of Elyria
+    description: Crystal Caves of Elyria sprawl across the Aethorian continent's gleaming
+      astral spine, where iridescent crystals embedded in the rock face refract and
+      amplify the planet's celestial energies. Glowing veins of stardust-infused quartz
+      pulse through the caverns like an ethereal network, casting an otherworldly
+      glow on the crystalline formations that have been sculpted by ancient, long-extinct
+      beings. Towering crystal spires support delicate bridges of silver-forged nanomaterials,
+      spanning the chasms between vast, glittering caverns where auroral storms churn
+      and dissipate in spectacular displays of aetherial pyrotechnics, while beneath
+      the surface, cryptic echoes of Elyria's long-lost architects still whisper secrets
+      to those attuned to the subtle harmonies of this sacred site.
+    image_prompt: 'Crystal Caves of Elyria: Aethorian continent''s astral spine with
+      iridescent crystals refracting celestial energies amidst glowing veins of stardust-infused
+      quartz and towering crystal spires supporting silver-forged bridges over glittering
+      caverns.'
+    image_path: images/regions/crystal_caves_of_elyria.png
+  - name: Glacial Spires of Xeridia
+    description: The Glacial Spires of Xeridia pierce the sky like shards of splintered
+      crystal, their frozen facets glinting with an otherworldly light as they rise
+      from the depths of the Cryovortex, a perpetual storm that shrouds the Aethoria
+      continent in a veil of swirling mist and glittering ice particles. These towering
+      spires are not mere mountains, but living entities infused with the essence
+      of Xeridia's ancient magic, their surfaces etched with intricate patterns that
+      shift and writhe like living serpents as they respond to the whispers of the
+      cosmos. Atop each spire, a glittering crystal city clings to the wind-sculpted
+      rock, its inhabitants – a mix of towering, crystalline beings known as the Xeridian
+      Keepers and enigmatic, winged humanoids called the Aeth'kai – living in harmony
+      with the ever-changing landscape as they tend the delicate balance of Xeridia's
+      frozen ecosystem.
+    image_prompt: 'Glacial Spires of Xeridia: towering crystalline formations piercing
+      the sky from the Cryovortex storm, etched with shifting serpentine patterns
+      and topped with glittering crystal cities inhabited by Xeridian Keepers and
+      Aeth''kai amidst swirling mist and ice particles.'
+    image_path: images/regions/glacial_spires_of_xeridia.png
+  cities:
+  - name: Aethereia Citadel
+    description: Aethereia Citadel sprawls across a series of crystalline spires that
+      pierce the sky like shards of splintered starlight, its architecture a blend
+      of organic and mechanical elegance. The city's foundation is rooted in a labyrinthine
+      network of iridescent caves, where bioluminescent fungi and gemstone deposits
+      imbue the air with an ethereal glow. As one ascends the spires, structures made
+      from a glittering alloy of star-silver and aeromantic crystals begin to take
+      shape, their facets reflecting the kaleidoscope of colors emanating from the
+      city's central crystal core. The Citadel's inhabitants, a diverse array of beings
+      with ties to the cosmos – star-dwelling avians, astral mages, and celestial
+      engineers – weave a tapestry of wonder and discovery amidst the ever-shifting
+      auroral displays that dance across Aethereia's skies.
+    image_prompt: 'Aethereia Citadel: A sprawling city on crystalline spires with
+      organic and mechanical architecture, iridescent caves, bioluminescent fungi,
+      star-silver alloy structures, and a central crystal core surrounded by avians,
+      mages, engineers amidst shifting auroral displays.'
+    image_path: images/cities/aethereia_citadel.png
+  description: 'Aethoria sprawls across the cosmos like a tapestry of wonders, its
+    continents stitched together by iridescent threads of starlight and stardust.
+    The world''s core is comprised of five distinct landmasses: Elyria, a realm of
+    glittering crystal spires that pierce the sky like shards of splintered moonlight;
+    Valtoria, a scorching desert landscape where shifting dunes of emerald sand writhe
+    like living serpents beneath an ever-changing celestial canvas; Nexarion, a land
+    of ancient wisdom, where cyclopean ruins whisper secrets to the wind and sentient
+    trees remember the birth of stars; Lyraea, a realm of shimmering waterfalls that
+    cascade into infinity, their misty veils hiding mysteries waiting to be unraveled
+    by intrepid explorers; and Khyronia, a twisted kingdom of nightmarish beauty,
+    where darkness reigns supreme and the very fabric of reality appears to be woven
+    from shadow.
+
+
+    The skies above Aethoria are ablaze with color, as auroral displays dance across
+    the firmament like great celestial ballets. Comet-like entities known as the Luminari
+    streak across the heavens, leaving trails of stardust in their wake that fall
+    to earth like cosmic confetti. Meanwhile, the planet''s double suns – the Radiant
+    Duo – cast an eternal twilight glow over Aethoria, imbuing its landscapes with
+    a dreamlike quality that beckons adventurers to explore and discover secrets hidden
+    within the world''s shimmering aura.
+
+
+    Aethoria is a realm of boundless magic, where ancient deities have long since
+    faded into myth, leaving behind a legacy of enchanted artifacts and forgotten
+    technologies waiting to be rediscovered by brave explorers. Wyrms, dragons, and
+    other fantastical creatures roam free across the continent, their presence woven
+    into the very fabric of reality like living threads in an intricate cosmic tapestry.
+    As the cosmos continues its eternal dance, Aethoria remains a realm of endless
+    possibility, where heroes and villains alike can forge their own destinies among
+    the stars.'
+  image_prompt: 'Aethoria: A mystical continent of five realms, where crystal spires
+    meet emerald dunes, sentient trees whisper secrets, and dreamlike landscapes are
+    set aflame by the Radiant Duo''s eternal twilight glow amidst cosmic ballets of
+    color and stardust.'
+  image_path: images/continents/aethoria.png
+oceans:
+- name: Nyxian Depths
+  description: 'Nyxian Depths sprawls across the dark side of the crystal-encrusted
+    moon of Elyria, where lunarquakes tremble the surface and gravity warps into eerie
+    gravitational waves. The ocean''s depths are an abyssal tapestry of iridescent
+    gases and luminescent plankton that weave a spectral glow across the seafloor.
+    Bioluminescent serpents, their scales shimmering with stardust-infused colors,
+    glide through the darkness, leaving trails of glittering silver sparks in their
+    wake.
+
+
+    As the Nyxian Depths plunge into the lower reaches of Elyria''s mantle, the pressure
+    and temperature gradients foster a realm of bizarre marine life. Glimmerwings,
+    ethereal creatures with delicate wings that refract starlight, dance through the
+    dark waters, while abyssal blooms burst forth in bursts of glittering, crystalline
+    beauty. However, this ocean''s tranquility is not without its perils: ghostly
+    shipwrecks, their silhouettes a testament to Elyria''s catastrophic past, lurk
+    in the depths, home to malevolent entities that stalk unwary travelers.
+
+
+    The Nyxian Depths are said to be an entrance to the Underdeep – a labyrinthine
+    network of tunnels and caverns that crisscross beneath Elyria. Few have ventured
+    into these mysterious passageways and returned to tell the tale. Those who do
+    speak of eerie echoes, whispers that seem to come from nowhere and everywhere
+    at once, and cryptic visions that hint at secrets buried deep within the moon''s
+    mantle. Brave spacefaring explorers and treasure hunters often seek out the Nyxian
+    Depths in search of ancient knowledge, hidden riches, or the mysteries of the
+    Underdeep itself.'
+  image_prompt: '"Moonlit ocean Nyxian Depths on Elyria''s dark side, where iridescent
+    gases and luminescent plankton create a spectral glow, bioluminescent serpents
+    glide through eerie gravitational waves, amidst ghostly shipwrecks and labyrinthine
+    tunnels."'
+  image_path: images/oceans/nyxian_depths.png
