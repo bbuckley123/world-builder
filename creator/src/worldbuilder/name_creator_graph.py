@@ -3,7 +3,6 @@ from langchain_ollama import OllamaLLM
 from typing import TypedDict
 import yaml
 import random
-from pprint import pprint
 from worldbuilder.paths import NAMES_RAW_YAML
 from worldbuilder.prompt_loader import load_prompt
 
