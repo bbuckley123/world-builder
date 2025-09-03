@@ -4,7 +4,6 @@ from typing import TypedDict
 import yaml
 import random
 import logging
-from pprint import pprint
 from worldbuilder.paths import NAMES_RAW_YAML
 from worldbuilder.prompt_loader import load_prompt
 logger = logging.getLogger(__name__)

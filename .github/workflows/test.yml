@@ -6,15 +6,16 @@ on:
   pull_request:
 
 jobs:
-  viewer-tests:
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: viewer/world-viewer
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      - run: npm test
+      - uses: astral-sh/setup-uv@v2
+        with:
+          python-version: '3.13'
+      - run: make install
+      - run: make lint
+      - run: make test

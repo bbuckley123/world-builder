@@ -27,8 +27,8 @@ fake_langgraph.graph = fake_graph
 sys.modules.setdefault("langgraph", fake_langgraph)
 sys.modules.setdefault("langgraph.graph", fake_graph)
 
-import yaml
-from worldbuilder import description_creator_graph as dcg
+import yaml  # noqa: E402
+from worldbuilder import description_creator_graph as dcg  # noqa: E402
 
 
 def test_load_world_yaml(tmp_path, monkeypatch):
