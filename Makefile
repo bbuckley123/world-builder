@@ -70,4 +70,4 @@ build-creator:
 sync-assets:
 	rm -rf viewer/world-viewer/public/worlds
 	mkdir -p viewer/world-viewer/public
-	cp -r creator/output/worlds viewer/world-viewer/public/worlds
+	cp -r creator/worlds viewer/world-viewer/public/worlds
