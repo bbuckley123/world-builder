@@ -2,7 +2,9 @@ import os
 import yaml
 import json
 import shutil
+import logging
 from worldbuilder.paths import WORLD_YAML, IMAGES_BASE_DIR, EXPORT_DIR
+logger = logging.getLogger(__name__)
 
 
 def slugify(name: str) -> str:
@@ -59,7 +61,7 @@ def update_world_index(state, world_id):
     with open(index_file, "w", encoding="utf-8") as f:
         json.dump(worlds, f, indent=2)
 
-    print(f"✅ Updated worlds index at {index_file}")
+    logger.info("Updated worlds index at %s", index_file)
 
 def main() -> None:
     package_current_world()

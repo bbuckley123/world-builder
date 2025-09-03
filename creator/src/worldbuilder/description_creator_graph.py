@@ -2,9 +2,11 @@ from langgraph.graph import StateGraph, END
 from langchain_ollama import OllamaLLM
 from typing import TypedDict
 import yaml
+import logging
 from worldbuilder.paths import NAMES_YAML, DESCRIPTIONS_YAML
 from worldbuilder.prompt_loader import load_prompt
 from copy import deepcopy
+logger = logging.getLogger(__name__)
 
 
 # === TypedDict Definitions ===
@@ -44,13 +46,13 @@ def load_world_yaml() -> World:
 def save_world_yaml(state: World) -> None:
     with open(DESCRIPTIONS_YAML, "w", encoding="utf-8") as f:
         yaml.dump(state, f, sort_keys=False, allow_unicode=True)
-    print(f"✅ Saved updated world with descriptions to {DESCRIPTIONS_YAML}")
+    logger.info("Saved updated world with descriptions to %s", DESCRIPTIONS_YAML)
 
 
 # === Description Generators ===
 
 def describe_world(state: World, llm: OllamaLLM) -> dict:
-    print("Describing the world")
+    logger.info("Describing the world")
     prompt = load_prompt("describe_world.txt", {
         "name": state["name"],
         "genre": state["genre"]
@@ -59,7 +61,7 @@ def describe_world(state: World, llm: OllamaLLM) -> dict:
 
 
 def describe_continents(state: World, llm: OllamaLLM) -> dict:
-    print("Describing the continents")
+    logger.info("Describing the continents")
     updated = []
     for c in state["continents"]:
         prompt = load_prompt("describe_continent.txt", {
@@ -71,7 +73,7 @@ def describe_continents(state: World, llm: OllamaLLM) -> dict:
 
 
 def describe_oceans(state: World, llm: OllamaLLM) -> dict:
-    print("Describing the oceans")
+    logger.info("Describing the oceans")
     updated = []
     for o in state["oceans"]:
         prompt = load_prompt("describe_ocean.txt", {
@@ -83,7 +85,7 @@ def describe_oceans(state: World, llm: OllamaLLM) -> dict:
 
 
 def describe_regions(state: World, llm: OllamaLLM) -> dict:
-    print("Describing the regions")
+    logger.info("Describing the regions")
     updated_continents = []
     for continent in state["continents"]:
         updated_regions = []
@@ -99,7 +101,7 @@ def describe_regions(state: World, llm: OllamaLLM) -> dict:
 
 
 def describe_cities(state: World, llm: OllamaLLM) -> dict:
-    print("Describing the cities")
+    logger.info("Describing the cities")
     updated_continents = []
     for continent in state["continents"]:
         updated_cities = []
@@ -117,7 +119,7 @@ def describe_cities(state: World, llm: OllamaLLM) -> dict:
 # === Finalization Step ===
 
 def finalize_descriptions(state: World) -> World:
-    print("finalizing description")
+    logger.info("Finalizing description")
     save_world_yaml(state)
     return state
 
@@ -159,3 +161,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
