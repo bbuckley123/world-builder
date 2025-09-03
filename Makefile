@@ -1,6 +1,6 @@
 PROJECT ?= all
 
-.PHONY: install install-viewer install-creator lint lint-viewer lint-creator test test-viewer test-creator build build-viewer build-creator sync-assets
+.PHONY: install install-viewer install-creator lint lint-viewer lint-creator test test-viewer test-creator build build-viewer build-creator sync-assets dev dev-viewer
 
 install:
 ifeq ($(PROJECT),viewer)
@@ -68,6 +68,16 @@ build-creator:
 	cd creator && bash run.sh
 
 sync-assets:
-	rm -rf viewer/world-viewer/public/worlds
-	mkdir -p viewer/world-viewer/public
-	cp -r creator/output/worlds viewer/world-viewer/public/worlds
+        rm -rf viewer/world-viewer/public/worlds
+        mkdir -p viewer/world-viewer/public
+        cp -r creator/output/worlds viewer/world-viewer/public/worlds
+
+dev:
+ifeq ($(PROJECT),viewer)
+	$(MAKE) dev-viewer
+else
+	$(MAKE) dev-viewer
+endif
+
+dev-viewer:
+	cd viewer/world-viewer && npm run dev
