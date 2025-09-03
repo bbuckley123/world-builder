@@ -1,8 +1,14 @@
 // EntityLayout.tsx
 import React from "react";
 import {
-  Box, Card, CardContent, CardMedia, Container, Typography,
-  Breadcrumbs, Link, Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  Container,
+  Typography,
+  Breadcrumbs,
+  Link,
+  Grid,
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
