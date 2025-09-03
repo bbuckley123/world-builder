@@ -25,3 +25,4 @@ describe('WorldListPage', () => {
     await waitFor(() => expect(globalThis.fetch).toHaveBeenCalled());
   });
 });
+

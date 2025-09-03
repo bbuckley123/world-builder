@@ -1,5 +1,5 @@
 // App.tsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 import { WorldListPage } from "./views/WorldListPage";
@@ -8,8 +8,13 @@ import { ContinentDetailPage } from "./views/ContinentDetailPage";
 import { OceanDetailPage } from "./views/OceanDetailPage";
 import { RegionDetailPage } from "./views/RegionDetailPage";
 import { CityDetailPage } from "./views/CityDetailPage";
+import { logger } from "./utils/logger";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    logger.info("App mounted");
+  }, []);
+
   return (
     <Container maxWidth="md" sx={{ paddingTop: 4 }}>
       <Routes>
@@ -37,3 +42,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
