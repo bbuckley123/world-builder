@@ -22,6 +22,17 @@ WORLD_IMG = DATA_DIR / "world.png"
 CONTINENT_IMG_DIR = DATA_DIR / "continents"
 OCEAN_IMG_DIR = DATA_DIR / "oceans"
 
+# Create directories if they do not exist
+for directory in (
+    OUTPUT_DIR,
+    EXPORT_DIR,
+    DATA_DIR,
+    IMAGES_BASE_DIR,
+    CONTINENT_IMG_DIR,
+    OCEAN_IMG_DIR,
+):
+    directory.mkdir(parents=True, exist_ok=True)
+
 def sanitize_name(name: str) -> str:
     """Sanitize a name so it's safe to use as a filename."""
     return name.strip().replace(" ", "_").replace("/", "_")
