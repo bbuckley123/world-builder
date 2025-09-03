@@ -68,9 +68,9 @@ build-creator:
 	cd creator && bash run.sh
 
 sync-assets:
-  rm -rf viewer/world-viewer/public/worlds
-  mkdir -p viewer/world-viewer/public
-  cp -r creator/worlds viewer/world-viewer/public/worlds
+	rm -rf viewer/world-viewer/public/worlds
+	mkdir -p viewer/world-viewer/public
+	cp -r creator/worlds viewer/world-viewer/public/worlds
 
 dev:
 ifeq ($(PROJECT),viewer)
