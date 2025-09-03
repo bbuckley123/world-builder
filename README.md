@@ -31,3 +31,7 @@ The viewer expects packaged worlds under `public/worlds`. After running the crea
 ## Project Goals
 World Builder aims to make it easy to prototype imaginary worlds. The creator can be extended with new prompt pipelines or image generators, while the viewer renders the packaged data for users to explore.
 
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+
