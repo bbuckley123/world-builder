@@ -1,6 +1,0 @@
-[console_scripts]
-descriptionbuilder = worldbuilder.description_creator_graph:main
-imagebuilder = worldbuilder.image_generator_graph:main
-name_chopper = worldbuilder.name_chopper:main
-namebuilder = worldbuilder.name_creator_graph:main
-package_world = worldbuilder.package_world:main
