@@ -1,14 +1,11 @@
-import unittest
 import sys
+from pathlib import Path
+import pytest
 
 
 def main() -> None:
-    loader = unittest.TestLoader()
-    tests = loader.discover(".")
-    runner = unittest.TextTestRunner(verbosity=2)
-    result = runner.run(tests)
-    if not result.wasSuccessful():
-        sys.exit(1)
+    test_dir = Path(__file__).resolve().parent / "src" / "tests"
+    sys.exit(pytest.main([str(test_dir)]))
 
 
 if __name__ == "__main__":
