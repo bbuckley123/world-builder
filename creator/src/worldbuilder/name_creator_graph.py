@@ -3,9 +3,11 @@ from langchain_ollama import OllamaLLM
 from typing import TypedDict
 import yaml
 import random
+import logging
 from pprint import pprint
 from worldbuilder.paths import NAMES_RAW_YAML
 from worldbuilder.prompt_loader import load_prompt
+logger = logging.getLogger(__name__)
 
 class City(TypedDict):
     name: str
@@ -48,7 +50,7 @@ def write_world_yaml(state: World) -> None:
             sort_keys=False,
             allow_unicode=True
         )
-    print(f"Saved world to {yaml_file}")
+    logger.info("Saved world to %s", yaml_file)
 
 def generate_genre(state, llm) -> World:
     genres = [
@@ -62,7 +64,7 @@ def generate_genre(state, llm) -> World:
     weights = [40, 20, 10, 10, 10, 10]
 
     selected_genre = random.choices(genres, weights=weights, k=1)[0]
-    print(f"The selected genre is: {selected_genre}")
+    logger.info("The selected genre is: %s", selected_genre)
     return {**state, "genre": selected_genre}
 
 def generate_world_name(state: World, llm: OllamaLLM):
@@ -164,3 +166,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

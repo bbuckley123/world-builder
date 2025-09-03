@@ -4,10 +4,12 @@ from typing import TypedDict
 from copy import deepcopy
 import os
 import yaml
+import logging
 
 from worldbuilder.prompt_loader import load_prompt
 from worldbuilder.pipeline_loader import get_stable_diffusion_pipeline
 from worldbuilder.paths import WORLD_YAML, DESCRIPTIONS_YAML
+logger = logging.getLogger(__name__)
 
 
 # === TypedDicts ===
@@ -57,7 +59,7 @@ def load_world_yaml() -> World:
 def save_world_yaml(state: World) -> None:
     with open(WORLD_YAML, "w", encoding="utf-8") as f:
         yaml.dump(state, f, sort_keys=False, allow_unicode=True)
-    print(f"✅ Saved image data to {WORLD_YAML}")
+    logger.info("Saved image data to %s", WORLD_YAML)
 
 
 # === Image Generation ===
@@ -94,12 +96,12 @@ def render_image_prompt(description: str, entity_type: str, name: str, llm: Olla
 # === Per-Entity Prompt + Image Nodes ===
 
 def generate_world_image_prompt(state: World, llm: OllamaLLM) -> dict:
-    print("generating world image prompt")
+    logger.info("Generating world image prompt")
     prompt = render_image_prompt(state["description"], "world", state["name"], llm)
     return {"image_prompt": prompt}
 
 def generate_world_image(state: World) -> dict:
-    print("generating world image")
+    logger.info("Generating world image")
     path = "output/images/world.png"
     path_locator = "images/world.png"
     generate_image(state["image_prompt"], path)
@@ -107,7 +109,7 @@ def generate_world_image(state: World) -> dict:
 
 
 def generate_continent_images(state: World, llm: OllamaLLM) -> dict:
-    print("generating continent images")
+    logger.info("Generating continent images")
     updated = []
     for c in state["continents"]:
         prompt = render_image_prompt(c["description"], "continent", c["name"], llm)
@@ -119,7 +121,7 @@ def generate_continent_images(state: World, llm: OllamaLLM) -> dict:
 
 
 def generate_region_images(state: World, llm: OllamaLLM) -> dict:
-    print("generating region images")
+    logger.info("Generating region images")
     updated_continents = []
     for continent in state["continents"]:
         updated_regions = []
@@ -134,7 +136,7 @@ def generate_region_images(state: World, llm: OllamaLLM) -> dict:
 
 
 def generate_city_images(state: World, llm: OllamaLLM) -> dict:
-    print("generating city images")
+    logger.info("Generating city images")
     updated_continents = []
     for continent in state["continents"]:
         updated_cities = []
@@ -149,7 +151,7 @@ def generate_city_images(state: World, llm: OllamaLLM) -> dict:
 
 
 def generate_ocean_images(state: World, llm: OllamaLLM) -> dict:
-    print("generating ocean images ")
+    logger.info("Generating ocean images")
     updated = []
     for ocean in state["oceans"]:
         prompt = render_image_prompt(ocean["description"], "ocean", ocean["name"], llm)
@@ -211,3 +213,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

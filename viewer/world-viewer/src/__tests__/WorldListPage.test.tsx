@@ -22,6 +22,7 @@ describe('WorldListPage', () => {
     );
 
     expect(screen.getByText(/choose a world/i)).toBeInTheDocument();
-    await waitFor(() => expect(global.fetch).toHaveBeenCalled());
+    await waitFor(() => expect(globalThis.fetch).toHaveBeenCalled());
   });
 });
+
