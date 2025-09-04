@@ -1,6 +1,6 @@
 # World Builder
 
-World Builder provides an end-to-end workflow for procedurally generating fictional worlds and exploring them in a web UI. The **creator** package assembles names, descriptions, and images using local language models, and the **viewer** package serves that content for browsing.
+World Builder provides an end-to-end workflow for procedurally generating fictional worlds and exploring them in a web UI. The **creator** package assembles names, descriptions, and images using local large language models, and the **viewer** package serves that content for browsing.
 
 ## Architecture
 - **Creator** – Python pipeline built with [LangGraph](https://github.com/langchain-ai/langgraph) and [Ollama](https://ollama.ai/). It generates YAML data and images, then packages a world into a folder under `creator/worlds`.
