@@ -29,7 +29,7 @@ description: 'Nyxoria-IV is a planet of perpetual twilight, shrouded in an etern
 image_prompt: A world of perpetual twilight on Nyxoria-IV, with iridescent mist refracting
   dual suns into colors, towering Aether Spires, and life-filled skies with Luminari
   winged creatures amidst the mystical realm's ever-changing landscape.
-image_path: world_image.png
+image_path: images/world.png
 continents:
 - name: Nyxoria
   regions:
