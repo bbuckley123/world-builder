@@ -14,13 +14,6 @@
     "preview": "aethoria_prime/images/world.png"
   },
   {
-    "id": "elyndorinthalis",
-    "name": "Elyndorinthalis",
-    "genre": "High Fantasy",
-    "description": "Elyndorinthalis sprawls across the Celestial Plateaus, a vast expanse of iridescent crystals that pierce the sky like shards of rainbow-hued glass. The land itself is alive, its crystalline core throbbing with an otherworldly energy that sustains the delicate balance of nature. Towering Aether Trees, their bark infused with glittering silver leaves, stretch towards the heavens as sentinels guarding the realm's secrets. Amidst this breathtaking tapestry, shimmering waterfalls cascade from crystal canyons, imbuing the air with an essence that fosters dreams and prophecy.\n\nBeyond the Plateaus' crystalline heart lies the Ethereal Wastes, a boundless expanse of swirling mists and shadowy tendrils that writhe like living darkness. This forsaken realm is home to ancient, malevolent beings known as the Shattered Ones, their fragmented forms a testament to the catastrophic event known only as \"The Great Dissonance.\" Their presence warps reality, birthing aberrant creatures and distorted landscapes that defy comprehension. Those who dare traverse this treacherous terrain risk succumbing to the madness-inducing whispers of the Wastes.\n\nElyndorinthalis' sky is a canvas of perpetual dawn, as if the world has forever suspended itself at the cusp of a new day. Starlight weaves an ethereal glow across the Celestial Plateaus, casting an otherworldly radiance upon the landscape. Ancient artifacts whisper secrets to the wind, and the whispers are said to be heard by those attuned to the land's mystical frequency. In Elyndorinthalis, heroes will find themselves bound to the whims of this enigmatic world, their destinies entwined with the unfolding tapestry of celestial politics, ancient prophecies, and forgotten lore.",
-    "preview": "elyndorinthalis/images/world.png"
-  },
-  {
     "id": "tenriethor",
     "name": "Tenriethor",
     "genre": "High Fantasy",
