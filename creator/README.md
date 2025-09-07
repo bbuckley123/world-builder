@@ -5,10 +5,6 @@ The **creator** subproject assembles fully generated fantasy worlds entirely on 
 ## Prerequisites
 
 - Install dependencies with [uv](https://github.com/astral-sh/uv).
-- Install the small English SpaCy model:
-  ```bash
-  uv run python -m spacy download en_core_web_sm
-  ```
 - Local models: the default configuration expects LLaMA for text and Stable Diffusion for images, but you can swap in alternatives.
 
 ## Pipeline
